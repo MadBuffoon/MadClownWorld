@@ -1,0 +1,31 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="TacticalARFull" count="1" craft_area="workbench" tags="learnable,perkMachineGunner">
+			<ingredient name="gunMGT1AK47Parts" count="7"/>
+			<ingredient name="resourceForgedSteel" count="15"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="7"/>
+			<ingredient name="resourceSpring" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunMGT1AK47Parts,resourceForgedIron,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="modNightvision" count="1">
+			<ingredient name="armorMilitarySetParts" count="15"/>
+			<ingredient name="apparelNightvisionGoggles" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceSewingKit" count="5"/>
+		</recipe>
+		
+		<recipe name="SupperNailgun" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="meleeToolPickT3Auger" count="1"/>
+			<ingredient name="meleeToolAxeT3Chainsaw" count="1"/>
+			<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+			<ingredient name="meleeToolRepairT3Nailgun" count="1"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+		</recipe>
+		
+	</append>
+</configs>

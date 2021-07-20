@@ -1,0 +1,27 @@
+<config>
+	<append xpath="/lootcontainers">
+	
+		
+		<lootgroup name="mad_LauncherHE" count="all">
+			<item name="MadRocketLauncherHE" count="1"/>
+			<item name="ammoCustomWeaponHE" count="10"/>
+		</lootgroup>
+		<lootgroup name="mad_LauncherFrag" count="all">
+			<item name="MadRocketLauncherFrag" count="1"/>
+			<item name="ammoCustomWeaponFrag" count="10"/>
+		</lootgroup>
+		
+		<lootgroup name="mad_op1" count="1">
+			<item name="MadCigar"  prob="15" count="1"/>
+			<item name="MadGun"  prob="20" count="1"/>
+			<item name="MadUtility"  prob="40" count="1"/>
+			<item group="mad_LauncherFrag"  prob="17"/>
+			<item group="mad_LauncherHE"  prob="40"/>			
+		</lootgroup>
+  <!-- the max cap for lootcontainer id is 1023 -->
+		<lootcontainer id="700" count="1" size="6,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate"  open_time="0.25" loot_quality_template="qualBaseTemplate" ignore_loot_abundance="true">
+			<item group="mad_op1"/>
+		</lootcontainer>
+			
+	</append>
+</config>

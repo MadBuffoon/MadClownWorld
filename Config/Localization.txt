@@ -1,0 +1,91 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+SuperiorGoggles,item_modifiers,items,,,Superior Goggles
+modSuperiorGogglesDesc,item_modifiers,Mod,,,"Allows the use of night vision while applying the lucky goggles and nerdy glasses buff.\nCrafting unlocked at level 5 Advanced Engineering."
+
+ammoCustomWeapon,item_modifiers,items,,,Mad Bullet Ammo
+ammoCustomWeaponFrag,item_modifiers,items,,,Mad Frag Rocket Ammo
+ammoCustomWeaponHE,item_modifiers,items,,,Mad HE Rocket Ammo
+ammoCustomWeaponDesc,item_modifiers,Mod,,,Ammo For Mad Custom Weapons.
+
+MadGun,item_modifiers,items,,,Mad Eagle
+MadGunDesc,item_modifiers,Mod,,,Mad!
+
+MadRocketLauncherFrag,item_modifiers,items,,,Mad RPG Zombies
+MadRocketLauncherFragDesc,item_modifiers,Mod,,,Mad! To kill all the ZOMBIES! 
+No Block Damage!
+
+MadRocketLauncherHE,item_modifiers,items,,,Mad RPG Blocks
+MadRocketLauncherHEDesc,item_modifiers,Mod,,,Mad! To destroy all the BLOCKS! 
+No Zombie, Animal and Player Damage!
+
+MadUtility,item_modifiers,items,,,Mad Utility
+MadUtilityDesc,item_modifiers,Mod,,,Mad! Destroy Blocks and Repair!
+
+TacticalARFull,item_modifiers,items,,,Tactical AR Auto
+TacticalARFullDesc,item_modifiers,Mod,,,Mad!
+
+MadTacticalARFullDEV,item_modifiers,items,,,Mad AR Auto
+MadTacticalARFullDEVDesc,item_modifiers,Mod,,,Mad Killer!
+
+MadAkDiggerToolDEV,item_modifiers,items,,,Mad Digger
+MadAkDiggerToolDEVDesc,item_modifiers,Mod,,,Digs and give you the shit!
+
+
+
+modNightvision,items,,,,Nightvision Mod
+modNightvisionDesc,items,,,,This module can be installed into your head gear.
+
+SupperNailgun,items,,,,Supper Nailgun
+SupperNailgunDesc,items,,,,Supper Nailgun is the endgame TOOL!
+
+
+MadCigar,item_modifiers,items,,,Mad Cigar
+MadCigarDesc,item_modifiers,Mod,,,Mad!
+statShowALLStats,ui_display,Item stat,,,All Stats
+
+Miner69rLevel05,progression,Attribute,,,Miner69r Level 5
+reqSalvageOperationsLevel05,progression,Attribute,,,Salvage Operations Level 5
+reqAdvancedEngineeringLevel05,progression,Attribute,,,Advanced Engineering Level 5
+reqGreaseMonkeyLevel05,progression,Attribute,,,GreaseMonkey Level 5
+reqPowerToolExpertLevel05,progression,Attribute,,,Power Tool Expert Level 5
+
+
+modEngine01,item_modifiers,items,,,Engine Type 1
+modEngine01Desc,item_modifiers,items,,,Fuel Usage 20% \nMax Speed 200% \nTurbo 200%
+modEngine02,item_modifiers,items,,,Engine Type 2
+modEngine02Desc,item_modifiers,items,,,Fuel Usage 30% \nMax Speed 300% \nTurbo 300%
+modEngine03,item_modifiers,items,,,Engine Type 3
+modEngine03Desc,item_modifiers,items,,,Fuel Usage 40% \nMax Speed 400% \nTurbo 400%
+modEngine04,item_modifiers,items,,,Engine Type 4
+modEngine04Desc,item_modifiers,items,,,Fuel Usage 50% \nMax Speed 500% \nTurbo 500%
+
+modEngine05,item_modifiers,items,,,Gyro Engine
+modEngine05Desc,item_modifiers,items,,,Only For the Gyro! \nFuel Usage 25% \nMax Speed 0% \nTurbo 500%
+
+modtank01,item_modifiers,items,,,Fuel Tank
+modtank01Desc,item_modifiers,items,,,Fuel Usage -50%
+
+modBike01,item_modifiers,items,,,Bike Chains
+modBike01Desc,item_modifiers,items,,,Only For the Bike! \nThis chain helps you go faster! \nMax Speed 0% \nTurbo 500%
+
+
+
+TwitchAction_Tele_RandomS,twitch,Actions,,,Teleport Random Short,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomSCommand,twitch,Actions,,,#tele_randoms,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomSDesc,twitch,Actions,,,Teleports Player Randomly to 20-50m Away.,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomF,twitch,Actions,,,Teleport Random Far,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomFCommand,twitch,Actions,,,#tele_randomf,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomFDesc,twitch,Actions,,,Teleports Player Randomly to 80-120m Away.,,,,,,,,,,,,,,
+TwitchAction_Tele_UP,twitch,Actions,,,Teleport Up,,,,,,,,,,,,,,
+TwitchAction_Tele_UPCommand,twitch,Actions,,,#tele_up,,,,,,,,,,,,,,
+TwitchAction_Tele_UPDesc,twitch,Actions,,,Teleports Player 12m UP.,,,,,,,,,,,,,,
+TwitchAction_SupplyAK,twitch,Actions,,,Gives AK,,,,,,,,,,,,,,
+TwitchAction_SupplyAKCommand,twitch,Actions,,,#supply_ak,,,,,,,,,,,,,,
+TwitchAction_SupplyAKDesc,twitch,Actions,,,Give an AK and Ammo to Player.,,,,,,,,,,,,,,
+TwitchAction_SpawnZoo,twitch,Actions,,,Spawns A Zoo,,,,,,,,,,,,,,
+TwitchAction_SpawnZooCommand,twitch,Actions,,,#spawn_zoo,,,,,,,,,,,,,,
+TwitchAction_SpawnZooDesc,twitch,Actions,,,Spawn a few zoo like Animals.,,,,,,,,,,,,,,
+
+TwitchAction_SupplyOP,twitch,Actions,,,Supply OP Item,,,,,,,,,,,,,,
+TwitchAction_SupplyOPCommand,twitch,Actions,,,#supply_op,,,,,,,,,,,,,,
+TwitchAction_SupplyOPDesc,twitch,Actions,,,Supplies one of many op items that are temporary.,,,,,,,,,,,,,,
