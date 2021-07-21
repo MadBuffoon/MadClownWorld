@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="MadWorld_Items" />
-		<Description value="Adds MadWorld Custom Items" />
+		<Name value="MadWorld_UI" />
+		<Description value="Mad World UI" />
 		<Author value="MadBuffoon" />
 		<Version value="1.0" />
 		<Website value="" />
