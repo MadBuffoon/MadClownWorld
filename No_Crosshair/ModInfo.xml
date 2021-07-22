@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="No Crosshair" />
+		<Description value="Remove crosshair on aiming with guns" />
+		<Author value="MadBuffoon" />
+		<Version value="1.2" />
+		<Website value="" />
+	</ModInfo>
+</xml>
