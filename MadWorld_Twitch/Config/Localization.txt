@@ -1,0 +1,44 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+ammoCustomWeapon,item_modifiers,items,,,Mad Bullet Ammo
+ammoCustomWeaponFrag,item_modifiers,items,,,Mad Frag Rocket Ammo
+ammoCustomWeaponHE,item_modifiers,items,,,Mad HE Rocket Ammo
+ammoCustomWeaponDesc,item_modifiers,Mod,,,Ammo For Mad Custom Weapons.
+
+MadGun,item_modifiers,items,,,Mad Eagle
+MadGunDesc,item_modifiers,Mod,,,Mad!
+
+MadRocketLauncherFrag,item_modifiers,items,,,Mad RPG Zombies
+MadRocketLauncherFragDesc,item_modifiers,Mod,,,Mad! To kill all the ZOMBIES! 
+No Block Damage!
+
+MadRocketLauncherHE,item_modifiers,items,,,Mad RPG Blocks
+MadRocketLauncherHEDesc,item_modifiers,Mod,,,Mad! To destroy all the BLOCKS! 
+No Zombie, Animal and Player Damage!
+
+MadUtility,item_modifiers,items,,,Mad Utility
+MadUtilityDesc,item_modifiers,Mod,,,Mad! Destroy Blocks and Repair!
+
+MadCigar,item_modifiers,items,,,Mad Cigar
+MadCigarDesc,item_modifiers,Mod,,,Mad!
+statShowALLStats,ui_display,Item stat,,,All Stats
+
+TwitchAction_Tele_RandomS,twitch,Actions,,,Teleport Random Short,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomSCommand,twitch,Actions,,,#tele_randoms,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomSDesc,twitch,Actions,,,Teleports Player Randomly to 20-50m Away.,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomF,twitch,Actions,,,Teleport Random Far,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomFCommand,twitch,Actions,,,#tele_randomf,,,,,,,,,,,,,,
+TwitchAction_Tele_RandomFDesc,twitch,Actions,,,Teleports Player Randomly to 80-120m Away.,,,,,,,,,,,,,,
+TwitchAction_Tele_UP,twitch,Actions,,,Teleport Up,,,,,,,,,,,,,,
+TwitchAction_Tele_UPCommand,twitch,Actions,,,#tele_up,,,,,,,,,,,,,,
+TwitchAction_Tele_UPDesc,twitch,Actions,,,Teleports Player 12m UP.,,,,,,,,,,,,,,
+TwitchAction_SupplyAK,twitch,Actions,,,Gives AK,,,,,,,,,,,,,,
+TwitchAction_SupplyAKCommand,twitch,Actions,,,#supply_ak,,,,,,,,,,,,,,
+TwitchAction_SupplyAKDesc,twitch,Actions,,,Give an AK and Ammo to Player.,,,,,,,,,,,,,,
+TwitchAction_SpawnZoo,twitch,Actions,,,Spawns A Zoo,,,,,,,,,,,,,,
+TwitchAction_SpawnZooCommand,twitch,Actions,,,#spawn_zoo,,,,,,,,,,,,,,
+TwitchAction_SpawnZooDesc,twitch,Actions,,,Spawn a few zoo like Animals.,,,,,,,,,,,,,,
+
+TwitchAction_SupplyOP,twitch,Actions,,,Supply OP Item,,,,,,,,,,,,,,
+TwitchAction_SupplyOPCommand,twitch,Actions,,,#supply_op,,,,,,,,,,,,,,
+TwitchAction_SupplyOPDesc,twitch,Actions,,,Supplies one of many op items that are temporary.,,,,,,,,,,,,,,

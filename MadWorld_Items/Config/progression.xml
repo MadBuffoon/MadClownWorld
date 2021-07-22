@@ -1,0 +1,28 @@
+<config>
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="TacticalARFull"/>
+		</effect_group>
+	</append>
+	
+		<append xpath="/progression/perks">
+
+<perk name="SuperTool" parent="LamsBonus" name_key="Super Tool" desc_key="Unlock Super Tools." icon="ui_game_symbol_misc_crafting">
+
+		<level_requirements level="1">
+					<requirement name="ProgressionLevel" progression_name="perkMiner69r"  operation="GTE" value="5" desc_key="Miner69rLevel05"/>
+					<requirement name="ProgressionLevel" progression_name="perkSalvageOperations"   operation="GTE" value="5" desc_key="reqSalvageOperationsLevel05"/>
+					<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering"    operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
+					<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="5" desc_key="reqGreaseMonkeyLevel05"/>
+					<requirement name="ProgressionLevel" progression_name="PowerToolExpert"  operation="GTE" value="5" desc_key="reqPowerToolExpertLevel05"/>
+		</level_requirements>
+
+
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="SupperNailgun"/>
+		<effect_description level="1" desc_base="SupperNailgun" long_desc_key="This unlocks the SupperNailgun! \nTHE END GAME Tool!"/>
+	</effect_group>
+</perk>	
+
+	</append>
+</config>

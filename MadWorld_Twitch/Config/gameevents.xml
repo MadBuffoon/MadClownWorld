@@ -1,0 +1,114 @@
+<config>
+
+<!-- Spawn -->
+<append xpath="/gameevents">
+	<action_sequence name="spawn_zoo">
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalZombieDog" />
+			<property name="spawn_count" value="2" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalBear" />
+			<property name="spawn_count" value="1" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalMountainLion" />
+			<property name="spawn_count" value="2" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalCoyote" />
+			<property name="spawn_count" value="2" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_bad_spawn" />
+			<property name="phase" value="1" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="sound" value="zombiedogalert" />
+			<property name="phase" value="1" />
+		</action>
+		
+	</action_sequence>
+</append>
+<!-- Teleport -->
+<append xpath="/gameevents">		
+	<action_sequence name="action_teleportS">
+		
+		<requirement class="InVehicle">
+			<property name="invert" value="true" />
+		</requirement>
+		
+		<action class="RandomTeleport">
+			<property name="min_distance" value="20" />
+			<property name="max_distance" value="50" />
+		</action>
+		
+	</action_sequence>
+	
+	<action_sequence name="action_teleportF">
+		
+		<requirement class="InVehicle">
+			<property name="invert" value="true" />
+		</requirement>
+		
+		<action class="RandomTeleport">
+			<property name="min_distance" value="80" />
+			<property name="max_distance" value="120" />
+		</action>
+		
+	</action_sequence>
+	
+	<action_sequence name="action_teleport_up">
+		
+		<requirement class="InVehicle">
+			<property name="invert" value="true" />
+		</requirement>
+		
+		<action class="Teleport">
+			<property name="target_position" value="0, 12, 0" />
+			<property name="is_offset" value="true" />
+		</action>
+		
+	</action_sequence>
+</append>	
+<!-- Supply -->
+<append xpath="/gameevents">
+	<action_sequence name="spawn_madop1">
+		
+		<action class="SpawnContainer">
+			<property name="entity_names" value="TwitchAction_SupplyMadOP1" />
+			<property name="min_distance" value="4" />
+			<property name="max_distance" value="8" />
+			<property name="safe_spawn" value="true" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_good_spawn" />
+			<property name="phase" value="1" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="sound" value="open_supply_crate" />
+			<property name="phase" value="1" />
+		</action>
+		
+	</action_sequence>
+</append>
+<!-- Give -->
+<append xpath="/gameevents">
+	<action_sequence name="action_giveak">
+		
+		<action class="AddItems">
+			<property name="added_items" value="gunMGT1AK47,ammo762mmBulletBall" />
+			<property name="added_item_counts" value="1,100" />
+		</action>
+		
+	</action_sequence>
+</append>
+</config>

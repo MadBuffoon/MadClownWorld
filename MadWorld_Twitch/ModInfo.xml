@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MadWorld_Twitch" />
+		<Description value="Adds MadWorld Custom Twitch Things" />
+		<Author value="MadBuffoon" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,24 @@
+<config>
+
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+		<lootgroup name="vehiclemods" count="1">
+			<item name="modEngine01" count="1"/>
+			<item name="modEngine02" count="1"/>
+			<item name="modEngine03" prob="0.3" count="1"/>
+			<item name="modEngine04" prob="0.2" count="1"/>
+			<item name="modEngine05" prob="0.1" count="1"/>
+			<item name="modtank01" count="1"/>
+			<item name="modBike01" count="1"/>
+		</lootgroup>
+	</insertAfter>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='automotive']">
+		<item group="vehiclemods"/>
+	</append>	
+	
+	<append xpath="/lootcontainers/lootgroup[@name='workingStiffsBox']">
+		<item group="vehiclemods"/>
+	</append>
+	
+
+</config>

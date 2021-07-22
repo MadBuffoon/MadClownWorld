@@ -1,0 +1,107 @@
+<config>
+
+<!-- Modified costs -->
+<set xpath = "/twitch/action[@name='twitch_Degrade']/property[@name='default_cost']/@value">200</set>
+<set xpath = "/twitch/action[@name='twitch_Spoil']/property[@name='default_cost']/@value">200</set>
+<set xpath = "/twitch/action[@name='twitch_buffAntiLeech']/property[@name='default_cost']/@value">100</set>
+<set xpath = "/twitch/action[@name='twitch_buffDistort']/property[@name='default_cost']/@value">200</set>
+<set xpath = "/twitch/action[@name='twitch_buffDistort']/property[@name='cooldown']/@value">600</set>
+
+
+<!--
+<insertAfter xpath="/twitch/category[@name='Spawns']">
+	<category name="Hordes" display_name="TwitchActionCategory_Hordes" icon="ui_game_symbol_talk" />
+	<category name="Bosses" display_name="TwitchActionCategory_Bosses" icon="ui_game_symbol_boxer" />
+	<category name="StealthSpawns" display_name="TwitchActionCategory_Stealth" icon="ui_game_symbol_stealth" />
+</insertAfter>
+-->
+
+
+
+<!-- Spawn -->
+<append xpath="/twitch">
+	<action name="twitch_Zoo" extends="twitch_normalZombie">
+		<property name="command" value="#spawn_zoo" />
+		<property name="command_key" value="TwitchAction_SpawnZooCommand" />
+		<property name="title_key" value="TwitchAction_SpawnZoo" />
+		<property name="description_key" value="TwitchAction_SpawnZooDesc" />
+		<property name="start_gamestage" value="90" />
+		<property name="event_name" value="spawn_zoo" />
+		<property name="default_cost" value="500" />
+		<property name="cooldown" value="1200" />
+		<property name="cooldown_blocked" value="true" />
+	</action>
+</append>	
+<!-- Teleport -->
+<append xpath="/twitch">
+	<action name="twitch_TeleRanS">
+		<property name="command" value="#tele_randoms" />
+		<property name="command_key" value="TwitchAction_Tele_RandomSCommand" />
+		<property name="title_key" value="TwitchAction_Tele_RandomS" />
+		<property name="description_key" value="TwitchAction_Tele_RandomSDesc" />
+		<property name="category" value="Special" />
+		<property name="event_name" value="action_teleportS" />
+		<property name="default_cost" value="150" />
+		<property name="is_positive" value="false" />
+		<property name="cooldown" value="300" />
+		<property name="cooldown_blocked" value="true" />
+		<property name="delay_notify" value="true" />
+	</action>
+	
+	<action name="twitch_TeleRanF">
+		<property name="command" value="#tele_randomf" />
+		<property name="command_key" value="TwitchAction_Tele_RandomFCommand" />
+		<property name="title_key" value="TwitchAction_Tele_RandomF" />
+		<property name="description_key" value="TwitchAction_Tele_RandomFDesc" />
+		<property name="category" value="Special" />
+		<property name="event_name" value="action_teleportF" />
+		<property name="default_cost" value="300" />
+		<property name="is_positive" value="false" />
+		<property name="cooldown" value="600" />
+		<property name="cooldown_blocked" value="true" />
+		<property name="delay_notify" value="true" />
+	</action>
+	
+	<action name="twitch_TeleUP">
+		<property name="command" value="#tele_up" />
+		<property name="command_key" value="TwitchAction_Tele_UPCommand" />
+		<property name="title_key" value="TwitchAction_Tele_UP" />
+		<property name="description_key" value="TwitchAction_Tele_UPDesc" />
+		<property name="category" value="Special" />
+		<property name="event_name" value="action_teleport_up" />
+		<property name="default_cost" value="500" />
+		<property name="is_positive" value="false" />
+		<property name="cooldown" value="600" />
+		<property name="cooldown_blocked" value="true" />
+		<property name="delay_notify" value="true" />
+	</action>
+</append>
+<!-- Supply -->
+<append xpath="/twitch">
+	<action name="twitch_spawnmaop1">
+		<property name="command" value="#supply_op" />
+		<property name="command_key" value="TwitchAction_SupplyOPCommand" />
+		<property name="title_key" value="TwitchAction_SupplyOP" />
+		<property name="description_key" value="TwitchAction_SupplyOPDesc" />
+		<property name="category" value="Spawns,Supplies" />
+		<property name="event_name" value="spawn_madop1" />
+		<property name="default_cost" value="500" />
+		<property name="is_positive" value="true" />
+		<property name="is_crate" value="true" />
+		<property name="cooldown" value="1200" />
+	</action>
+</append>	
+<!-- Give -->
+<append xpath="/twitch">
+	<action name="twitch_akdrop" extends="twitch_spawnWeapon1">
+		<property name="command" value="#supply_AK" />
+		<property name="command_key" value="TwitchAction_SupplyAKCommand" />
+		<property name="title_key" value="TwitchAction_SupplyAK" />
+		<property name="description_key" value="TwitchAction_SupplyAKDesc" />
+		<property name="start_gamestage" value="1" />
+		<property name="event_name" value="action_giveak" />
+		<property name="default_cost" value="500" />
+		<property name="cooldown" value="600" />
+	</action>
+</append>
+</config>
