@@ -1,0 +1,5 @@
+<configs>
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@name='CrosshairOnAim']/@value">true</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='CrosshairOnAim']/@value">true</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='CrosshairOnAim']/@value">true</set>	
+</configs>
