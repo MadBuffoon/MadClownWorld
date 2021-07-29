@@ -24,6 +24,7 @@ reqSalvageOperationsLevel05,progression,Attribute,,,Salvage Operations Level 5
 reqAdvancedEngineeringLevel05,progression,Attribute,,,Advanced Engineering Level 5
 reqGreaseMonkeyLevel05,progression,Attribute,,,GreaseMonkey Level 5
 reqPowerToolExpertLevel05,progression,Attribute,,,Power Tool Expert Level 5
+reqLamModPowerBonusLevel05,progression,Attribute,,,Mod Power Bonus Level 5
 
 
 modEngine01,item_modifiers,items,,,Engine Type 1
@@ -43,4 +44,8 @@ modtank01Desc,item_modifiers,items,,,Fuel Usage -50%
 
 modBike01,item_modifiers,items,,,Bike Chains
 modBike01Desc,item_modifiers,items,,,Only For the Bike! \nThis chain helps you go faster! \nMax Speed 0% \nTurbo 500%
+
+
+modDMGvSpeed,item_modifiers,items,,,Damage Vs Speed
+modDMGvSpeedDesc,item_modifiers,items,,,Damage 40% UP\nRounds Per Minute Down 40% \nAttacks Per Minute Down 40%
 

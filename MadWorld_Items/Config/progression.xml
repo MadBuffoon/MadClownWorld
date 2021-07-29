@@ -7,20 +7,32 @@
 	
 		<append xpath="/progression/perks">
 
-<perk name="SuperTool" parent="LamsBonus" name_key="Super Tool" desc_key="Unlock Super Tools." icon="ui_game_symbol_misc_crafting">
+<perk name="SuperTool" parent="LamsBonus" name_key="Super Things" desc_key="Unlock Super Things." icon="ui_game_symbol_misc_crafting">
+
 
 		<level_requirements level="1">
+					<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering"    operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
+					<requirement name="ProgressionLevel" progression_name="PowerToolExpert"  operation="GTE" value="5" desc_key="reqPowerToolExpertLevel05"/>
+					<requirement name="ProgressionLevel" progression_name="LamModPowerBonus"  operation="GTE" value="5" desc_key="reqLamModPowerBonusLevel05"/>
+		</level_requirements>
+		
+		<level_requirements level="2">
 					<requirement name="ProgressionLevel" progression_name="perkMiner69r"  operation="GTE" value="5" desc_key="Miner69rLevel05"/>
 					<requirement name="ProgressionLevel" progression_name="perkSalvageOperations"   operation="GTE" value="5" desc_key="reqSalvageOperationsLevel05"/>
 					<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering"    operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
 					<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="5" desc_key="reqGreaseMonkeyLevel05"/>
-					<requirement name="ProgressionLevel" progression_name="PowerToolExpert"  operation="GTE" value="5" desc_key="reqPowerToolExpertLevel05"/>
+					<requirement name="ProgressionLevel" progression_name="PowerToolExpert"  operation="GTE" value="5" desc_key="reqPowerToolExpertLevel05"/>					
+					<requirement name="ProgressionLevel" progression_name="LamModPowerBonus"  operation="GTE" value="5" desc_key="reqLamModPowerBonusLevel05"/>
 		</level_requirements>
 
 
-	<effect_group>
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="SupperNailgun"/>
-		<effect_description level="1" desc_base="SupperNailgun" long_desc_key="This unlocks the SupperNailgun! \nTHE END GAME Tool!"/>
+	<effect_group>	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,2" value="1" tags="modDMGvSpeed"/>		
+		<effect_description level="1" desc_base="Damage Vs Speed" long_desc_key="This unlocks a mod: \nDamage 40% UP\nRounds Per Minute Down 40% \nAttacks Per Minute Down 40% \nTHE END GAME MOD!"/>
+		
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,2" value="1" tags="SupperNailgun"/>
+		<effect_description level="2" desc_base="SupperNailgun" long_desc_key="This unlocks the SupperNailgun! \nTHE END GAME Tool!"/>
+
 	</effect_group>
 </perk>	
 

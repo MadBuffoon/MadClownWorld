@@ -19,12 +19,20 @@
 			<ingredient name="resourceSewingKit" count="5"/>
 		</recipe>
 		
-		<recipe name="SupperNailgun" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<recipe name="SupperNailgun" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,SuperTool">
 			<ingredient name="meleeToolPickT3Auger" count="1"/>
 			<ingredient name="meleeToolAxeT3Chainsaw" count="1"/>
 			<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
 			<ingredient name="meleeToolRepairT3Nailgun" count="1"/>
 			<ingredient name="resourceDuctTape" count="20"/>
+		</recipe>
+
+		<recipe name="modDMGvSpeed" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,SuperTool">
+			<ingredient name="resourceForgedSteel" count="30"/>
+			<ingredient name="resourceMetalPipe" count="6"/>
+			<ingredient name="resourceScrapPolymers" count="150"/>
+			<ingredient name="resourceDuctTape" count="6"/>
+			<ingredient name="resourceMechanicalParts" count="12"/>
 		</recipe>
 		
 	</append>

@@ -238,7 +238,8 @@
 			<property name="SoundJammed" value="weapon_jam"/>
 			<property name="CrosshairUpAfterShot" value="true"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="ShowQuality" value="true"/>
+			<property name="ShowQuality" value="true"/>			
+			<property name="UnlockedBy" value="SuperTool"/>
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Hitmask_override" value="Melee"/>
@@ -339,6 +340,13 @@
 		</item>
 
 </insertAfter>
+
+		<append xpath = "/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']">
+			<passive_effect name="MagazineSize" operation="base_set" value="150" tags="perkMachineGunner"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="0.70"/>
+		</append>
+			
+			
 
 <append xpath="/items/item[@name='vehicleMinibikePlaceable']/property[@name='Tags' and @value]/@value">,smallengine,headlight</append>
 

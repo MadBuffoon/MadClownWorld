@@ -33,13 +33,16 @@
 			<rect width="168" height="27" pos="60, 0" controller="PartyEntry" visible="{partyvisible}">
 
 				<sprite depth="2" name="background" color="0,0,0,220" pos="-3,4" height="35" width="171" type="sliced" />
-				
+				<sprite depth="2" name="background" color="90,90,90,100" pos="0,0" height="29" width="165" type="sliced" />
+				<!--
 				<filledsprite depth="3" name="BarHealthModifiedMax" color="{healthcolor}" height="22" width="165" type="filled" fill="{statcurrentwithmax}" />
 				<filledsprite depth="3" name="BarStaminaModifiedMax" color="110,110,110,255" height="22" width="165" type="filled" fill="{statcurrentwithmax}" />
+				-->
 				
 				<filledsprite depth="5"  name="BarHealth" color="{healthcolor}" width="165" height="22" type="filled" fill="{healthfill}" />
 				<filledsprite depth="5"  pos="0, -22" name="BarStamina" color="0,54,255,255" width="165" height="6" type="filled" fill="{staminafill}" />
-				
+				 
+				 
 				<label depth="6" name="TextContent" pos="6, 0"  height="20" width="124" color="[white]" justify="left" pivot="topleft" text="{name}"/> <!--HP:[DECEA3]{healthcurrent}  {level}  -->
 				<label depth="6" name="TextContent" pos="200,0" font_size="20" color="240,240,240,255" pivot="topleft" text="{distance}" height="30" effect="outline"/> <!--{distancecolor}-->
 

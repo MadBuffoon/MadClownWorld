@@ -182,6 +182,26 @@
 		</effect_group>
 	</item_modifier>
 
+<item_modifier name="modDMGvSpeed" installable_tags="tool,weapon" blocked_tags="noMods" type="attachment" modifier_tags="DMGvSpeed">		
+		<property name="UnlockedBy" value="SuperTool"/>		
+		<property name="DisplayType" value="modDMGvSpeed"/>
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
+		<property name="CustomIconTint" value="255,90,0" />
+		<property name="TintColor" value="255,90,0"/>
+		<property name="DescriptionKey" value="modDMGvSpeedDesc"/>
+		<property name="Stacknumber" value="1"/> 
+		<property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>		
+		<property name="EconomicValue" value="10000"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.4"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="0.4"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="-0.4"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-0.4"/>
+		</effect_group>
+</item_modifier>
+
 </append>
 <!-- Item/Installable Tags:
 weapon,

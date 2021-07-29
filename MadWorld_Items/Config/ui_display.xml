@@ -1,0 +1,13 @@
+<config>
+    <append xpath="/ui_display_info/item_display">		
+		<!--
+		<item_display_info display_type="modDMGvSpeed">
+			<display_entry name="EntityDamage" title_key="statEntityDamage" display_type="Percent" show_inverted="true" display_leading_plus="true" negative_preferred="true"/>
+			<display_entry name="BlockDamage" title_key="statBlockDamage" display_type="Percent" show_inverted="true" display_leading_plus="true" negative_preferred="true"/>
+			<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" display_type="Percent" show_inverted="true" display_leading_plus="true" negative_preferred="true"/>
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" display_type="Percent" show_inverted="true" display_leading_plus="true" negative_preferred="true"/>
+		</item_display_info>
+		-->
+		
+	</append>
+</config>
