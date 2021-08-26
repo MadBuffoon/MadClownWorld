@@ -104,50 +104,58 @@
                     <label name="Currentlife" font_size="18" pos="-35,27" controller="PlayerStatsWindow" color="[white]" depth="5" effect="outline" text="Current life [DECEA3]{playercurrentlife}" justify="left"/>										
                     <label name="Longestlife" font_size="18" pos="-35,47" controller="PlayerStatsWindow" color="[white]" depth="5" effect="outline" text="Longest life [DECEA3]{playerlongestlife}" justify="left"/>
 					-->
-				<rect name="StatInfo" pos="170,53" rows="1" cols="1" width="242" controller="PlayerStatsWindow" visible="{statvisible}">	                    
-				<rect name="hud" pos="0,77" rows="1" cols="1" width="242">
+				<rect name="StatInfo" pos="170,53" rows="1" cols="1" width="242" controller="PlayerStatsWindow">	                    
+				<rect name="hud" pos="0,77" rows="1" cols="1" width="242" visible="{statvisible}">
 					<sprite depth="1" pos="0,0" height="37" width="242" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
 					<label depth="5" name="playerXP" pos="8,-4" font_size="24" color="[white]" justify="left" pivot="topleft" text="LvL: [DECEA3]{playerlevel} - [FFFFFF]EXP Need: [DECEA3]{playerxptonextlevel}" controller="PlayerStatsWindow"/>
 					<sprite depth="3" pos="3,-3" height="30" width="235" color="[darkGrey]" foregroundlayer="true" type="sliced"/>
 					<sprite depth="4" pos="3,-3" height="30" width="235" color="{xpcolor}" sprite="menu_empty3px" type="filled" fill="{xp}" globalopacitymod="1.5" controller="ToolbeltWindow" standard_xp_color="90,0,153,200" updating_xp_color="120,0,204,200" deficit_xp_color="[red]" xp_fill_speed="3.5"/>	
 				</rect>	
 			
-				<rect name="hud" pos="0,0" rows="1" cols="1" width="80">
+				<rect name="hud" pos="0,0" rows="1" cols="1" width="80" visible="{statvisible}">
 					<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
 
 					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_marksmanship" color="[iconColor]" foregroundlayer="true"/>
 					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="KILLS" font_size="12" color="[white]"/>	
-					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerzombiekills}"/>					
+					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerzombiekills}" controller="PlayerStatsWindow"/>					
 
 				</rect>	
 			
-				<rect name="hud" pos="81,0" rows="1" cols="1" width="80">
+				<rect name="hud" pos="81,0" rows="1" cols="1" width="80" visible="{statvisible}">
 					<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
 
 					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_near_death_trauma" color="[iconColor]" foregroundlayer="true"/>
 					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="DEATHS" font_size="12" color="[white]"/>	
-					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerdeaths}"/>					
+					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerdeaths}" controller="PlayerStatsWindow"/>					
 
 				</rect>	
 			
-				<rect name="hud" pos="162,0" rows="1" cols="1" width="80">
-					<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
+				<rect name="hud" pos="162,0" rows="1" cols="1" width="80" visible="{statvisible}">
+					<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true" />
 
 					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_run_and_gun" color="[iconColor]" foregroundlayer="true"/>
 					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="PVP" font_size="12" color="[white]"/>	
-					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerpvpkills}"/>					
+					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerpvpkills}" controller="PlayerStatsWindow"/>					
 
 				</rect>		
-			
-				<rect name="hud" pos="0,39" rows="1" cols="1" width="120">
+				<!--
+				<rect name="hud" pos="0,39" rows="1" cols="1" width="120" visible="{statvisible}">
 					<sprite depth="1" pos="0,0" height="38" width="120" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
 
 					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_player" color="[iconColor]" foregroundlayer="true"/>
 					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="Current life" font_size="12" color="[white]"/>	
 					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playercurrentlife}" controller="PlayerStatsWindow"/>	
 				</rect>	
-			
-				<rect name="hud" pos="121,39" rows="1" cols="1" width="121">
+				-->
+				<rect name="hud" pos="0,39" rows="1" cols="1" width="120" visible="{statvisible}">
+					<sprite depth="1" pos="0,0" height="38" width="120" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
+
+					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_compass" color="[iconColor]" foregroundlayer="true"/>
+					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="Travelled" font_size="12" color="[white]"/>	
+					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playertravelled}" controller="PlayerStatsWindow"/>	
+				</rect>	
+				
+				<rect name="hud" pos="121,39" rows="1" cols="1" width="121" visible="{statvisible}">
 					<sprite depth="1" pos="0,0" height="38" width="121" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
 
 					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_skull" color="[iconColor]" foregroundlayer="true"/>
