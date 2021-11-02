@@ -20,5 +20,18 @@
 		<item group="vehiclemods"/>
 	</append>
 	
-
+<!-- There is now 50% chance to find between 1 and 5 eggs in every brid nest -->
+<remove xpath="/lootcontainers/lootgroup[@name='groupBirdNest']" />		
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupWeaponsBagLoot']">
+		<lootgroup name="foodEggLoot" count="all">
+			<item name="foodEgg" count="1,4"/>
+		</lootgroup>
+		<lootgroup name="resourceFeatherLoot" count="all">
+			<item name="resourceFeather" count="5,10"/>
+		</lootgroup>
+		<lootgroup name="groupBirdNest" count="all">
+			<item group="foodEggLoot"/>
+			<item group="resourceFeatherLoot"/>
+		</lootgroup>
+	</insertAfter>
 </config>
