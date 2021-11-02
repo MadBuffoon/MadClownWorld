@@ -1,0 +1,72 @@
+<config>
+<insertAfter xpath="/items/item[@name='schematicMaster']">
+
+<item name="armor_Mad_MC_Chest">
+	<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
+	<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+	<property name="EquipSlot" value="Chest"/>
+	<property name="CustomIcon" value="armorMilitaryVest"/>
+	<property name="DescriptionKey" value="armor_Mad_MC_Chest_Desc"/>
+	<effect_group name="MC Plot Armor">
+		<passive_effect name="ModSlots" operation="base_set" value="3,3,4,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="80.23,120.93"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="15,25.27" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="80.23,120.93" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="15,25.27" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.1,0.343" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="700,1000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="4.0"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0262" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="-.562"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/>		
+		<passive_effect name="HypothermalResist" operation="base_add" value="16.8,26.2"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="20.5,30.5"/>
+		<passive_effect name="HealthMax" operation="base_add" value="900"/><display_value name="dHealthMax" value="1000"/>
+		<passive_effect name="HealthMax" operation="base_subtract" value="@$PlayerLevelBonus"/>
+	</effect_group>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_vest"/>
+		<property name="Overlay0" value="armor_kevlar_vest"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="ChestArmor"/>
+	</property>
+</item>
+
+<item name="armor_Mad_MC_Helmet">
+	<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
+	<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+	<property name="EquipSlot" value="Head"/>	
+	<property name="CustomIcon" value="resourceBrokenGlass"/>
+	<property name="CustomIconTint" value="30,23,37" />
+	<property name="TintColor" value="30,23,37"/>
+	<property name="DescriptionKey" value="armor_Mad_MC_Helmet_Desc"/>	
+	<effect_group name="MC Plot Armor">
+		<passive_effect name="ModSlots" operation="base_set" value="3,3,4,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.23,10.93"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.23,10.93" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="-.562"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/>
+	</effect_group>	
+	<property class="UMA">
+		<property name="Mesh" value=""/>
+		<property name="Overlay0" value=""/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="ShowAltHair" value="False"/>
+	</property>
+</item>
+
+</insertAfter>
+</config>

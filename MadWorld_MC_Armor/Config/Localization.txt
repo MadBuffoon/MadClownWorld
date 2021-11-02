@@ -1,0 +1,8 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+
+armor_Mad_MC_Chest,item_modifiers,items,,,MC Plot Armor Chest
+armor_Mad_MC_Chest_Desc,item_modifiers,Mod,,,Military Chest \nThis armor gives you stats of a MC character \n out of an anime!
+
+armor_Mad_MC_Helmet,item_modifiers,items,,,MC Plot Armor Helmet
+armor_Mad_MC_Helmet_Desc,item_modifiers,Mod,,,Invisible Helmet \nThis armor gives you stats of a MC character \n out of an anime!
