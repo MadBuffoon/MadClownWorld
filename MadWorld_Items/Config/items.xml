@@ -1,7 +1,7 @@
 <config>
 <insertAfter xpath="/items/item[@name='gunHandgunT3DesertVulture']">
 
-<item name="TacticalARFull"> <!-- gunMGT2TacticalAR -->
+<item name="gunTacticalARFull"> <!-- gunMGT2TacticalAR -->
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic"/><!-- attachmentsIncluded -->
 	<property name="CustomIcon" value="gunMGT2TacticalAR"/>
 	<property name="DisplayType" value="rangedGun"/>
@@ -43,11 +43,11 @@
 		<property name="ScopeCameraOffset" value="-.00062,0,.055"/>
 	</property>
 
-	<effect_group name="TacticalARFull">
+	<effect_group name="gunTacticalARFull">
 		<passive_effect name="MaxRange" operation="base_set" value="90" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/> <!-- random effective rng -->
-		<passive_effect name="EntityDamage" operation="base_add" value="-9" tags="perkMachineGunner"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="-3" tags="perkMachineGunner"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMachineGunner"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMachineGunner"/> <!-- tier bonus -->
@@ -61,7 +61,7 @@
 
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="405" tags="perkMachineGunner"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1000" tags="perkMachineGunner"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="30" tags="perkMachineGunner"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="32" tags="perkMachineGunner"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".7" tags="perkMachineGunner"/> <!-- 3.8s -->
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.8" tags="perkMachineGunner"/>
@@ -88,7 +88,7 @@
 	</effect_group>
 </item>
 
-<item name="MadTacticalARFullDEV"> <!-- gunMGT2TacticalAR -->
+<item name="gunMadTacticalARFullDEV"> <!-- gunMGT2TacticalAR -->
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Tags" value="CustomWeapon"/>
 	<property name="ItemTypeIcon" value="computer"/>
@@ -129,7 +129,7 @@
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
 	</property>
-	<effect_group name="MadTacticalARFullDEV" tiered="false">
+	<effect_group name="gunMadTacticalARFullDEV" tiered="false">
 		<passive_effect name="MaxRange" operation="base_set" value="200"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="200"/>
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="600"/>
@@ -154,7 +154,7 @@
 	</effect_group>
 </item>
 
-<item name="MadAkDiggerToolDEV">
+<item name="gunMadAkDiggerToolDEV">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Tags" value="CustomWeapon"/>
 	<property name="ItemTypeIcon" value="computer"/>
@@ -344,6 +344,9 @@
 		<append xpath = "/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']">
 			<passive_effect name="MagazineSize" operation="base_set" value="150" tags="perkMachineGunner"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="0.70"/>
+		</append>
+		<append xpath = "/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']">
+			<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
 		</append>
 			
 			

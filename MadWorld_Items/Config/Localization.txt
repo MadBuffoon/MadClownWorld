@@ -49,3 +49,6 @@ modBike01Desc,item_modifiers,items,,,Only For the Bike! \nThis chain helps you g
 modDMGvSpeed,item_modifiers,items,,,Damage Vs Speed
 modDMGvSpeedDesc,item_modifiers,items,,,Damage 40% UP\nRounds Per Minute Down 40% \nAttacks Per Minute Down 40%
 
+modGunAntiPersonnel,item_modifiers,items,,,Anti-Personnel Ammo Modifier
+modGunAntiPersonnelDesc,item_modifiers,items,,,Changes Ammo to Anti-Personnel\nDoes More 20% More Damage to Flesh and No damage to Blockes.\nAlso Reduces Recoil
+

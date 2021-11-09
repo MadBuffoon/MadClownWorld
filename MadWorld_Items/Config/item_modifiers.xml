@@ -202,6 +202,27 @@
 		</effect_group>
 </item_modifier>
 
+	<item_modifier name="modGunAntiPersonnel" installable_tags="weapon" blocked_tags="noMods" type="attachment" modifier_tags="GunAntiPersonnel">	
+		<property name="DisplayType" value="modGunAntiPersonnel"/>
+		<property name="CustomIcon" value="modMeleeStunBatonRepulsor"/>
+		<property name="CustomIconTint" value="255,90,0" />
+		<property name="TintColor" value="255,90,0"/>
+		<property name="DescriptionKey" value="modGunAntiPersonnelDesc"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<!-- Muzzle brake: Directs some of the gases upwards to reduce recoil. Typically increases visibility of the gun/shooter as a result. -->
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.15"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.15"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".08"/>			
+			<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.2"/>
+		</effect_group>
+			<!-- <passive_effect name="DamageFalloffRange" operation="base_add" value="-5"/> -->
+	</item_modifier>
+
 </append>
 <!-- Item/Installable Tags:
 weapon,
