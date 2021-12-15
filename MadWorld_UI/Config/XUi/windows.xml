@@ -42,8 +42,8 @@
 			<sprite depth="1" name="border" color="0,0,0,100" type="sliced" width="360" globalopacity="true"/>
 			<filledsprite depth="2" name="BarContent" type="filled" color="200,0,0,180" width="360" fill="{fill}" globalopacity="true"/>
 			<!-- <label depth="3" name="TextContent" pos="9,-2" font_size="18" color="[white]" justify="center" pivot="topleft" text="{name}   [DECEA3]{currentwithmax}" height="30"/> -->
-			<label depth="3" name="TextContentName" pos="5,-2" font_size="18" color="[white]" justify="left" pivot="topleft" text="{name}" height="30"/>
-			<label depth="3" name="TextContentHealth" pos="-5,-2" font_size="18" color="[white]" justify="right" pivot="topleft" text="[DECEA3]{currentwithmax}" height="30"/>
+			<label depth="3" name="TextContentName" pos="5,-4" font_size="18" color="[white]" justify="left" pivot="topleft" text="{name}" height="30"/>
+			<label depth="3" name="TextContentHealth" pos="-5,-4" font_size="18" color="[white]" justify="right" pivot="topleft" text="[DECEA3]{currentwithmax}" height="30"/>
 			<sprite depth="0" name="background" color="0,0,0,220" pos="-3,3" size="366, 32" globalopacitymod="0" type="sliced" />
 		</rect>
 	</window>
@@ -61,19 +61,19 @@
             <sprite pos="65,-50" sprite="" color="255,255,255,255" globalopacitymod="1.8">			
 				<sprite depth="0" name="background" color="0,0,0,220" pos="-37,12" size="325,27" globalopacitymod="0" type="sliced" />
 				
-                <label name="fpsHUDday" depth="2" pos="5,0" width="70" height="30"
+                <label name="fpsHUDday" depth="2" pos="5,-2" width="70" height="30"
                        text="Day  [{daycolor|always}]{day|always}" font_size="20" crispness="Never" effect="outline"
                        effect_distance="1,1" upper_case="true" pivot="center" justify="center"/>
-                <label name="fpsHUDtime" depth="2" pos="75,0" width="70" height="40" text="{time|always}"
+                <label name="fpsHUDtime" depth="2" pos="75,-2" width="70" height="40" text="{time|always}"
                        font_size="20" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true"
                        pivot="center" justify="center"/>
-                <label name="fpsHUDelevationValue" depth="2" pos="130,0" width="70" height="40" text="{mapelevation} M"
+                <label name="fpsHUDelevationValue" depth="2" pos="130,-2" width="70" height="40" text="{mapelevation} M"
                        font_size="20" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true"
                        pivot="center" justify="center" controller="MapStats"/>
-                <label name="fpsHUDmapTemperature" depth="2" pos="180 ,0" width="70" height="40" text="{maptemperature}"
+                <label name="fpsHUDmapTemperature" depth="2" pos="180 ,-2" width="70" height="40" text="{maptemperature}"
                        font_size="20" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true"
                        pivot="center" justify="center" controller="MapStats"/>
-                <label name="fpsHUDcoreTemperature" depth="2" pos="240 ,0" width="120" height="40" text=" [ {playercoretemp} ]"
+                <label name="fpsHUDcoreTemperature" depth="2" pos="240 ,-2" width="120" height="40" text=" [ {playercoretemp} ]"
                        font_size="20" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true"
                        pivot="center" justify="center" controller="MapStats"/>
             </sprite>
@@ -84,7 +84,7 @@
                      texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_hud_compass_marker.png"
                      color="[darkGrey]"/>
             <!--custom compass texture-->
-            <texture name="compassTexture" depth="4" pos="0,5" size="380,30" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_compass.png" tooltip="Navigation" rect_size="0.25,1" rect_offset=".8,0"/>
+            <texture name="compassTexture" depth="4" pos="0,5" size="380,30" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_compass.png" tooltip="Navigation" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.375},0"/>
 
         </window>
     </append>
@@ -112,74 +112,59 @@
                             </rect>
                         </panel>
                     </rect>
-					<!--					
-					<sprite depth="0" name="background" color="0,0,0,220" pos="-45,60" size="300,75" globalopacitymod="0" type="sliced" />
-                    <label depth="5" name="playerXP" pos="-35,4" font_size="18" color="[white]" justify="left" pivot="topleft" text="Level: [DECEA3]{playerlevel} - {playerxptonextlevel}" controller="PlayerStatsWindow"/>		
-                    <label name="PlayerDeaths" font_size="18" pos="120,7" controller="PlayerStatsWindow" color="[white]" depth="5" effect="outline" text="Deaths [DECEA3]{playerdeaths}" justify="left"/>	
-                    <label name="PlayerKills" font_size="18" pos="120,27" controller="PlayerStatsWindow" color="[white]" depth="5" effect="outline" text="PVP Kills[DECEA3]{playerpvpkills}" justify="left"/>		
-                    <label name="PlayerZombieKills" font_size="18" pos="120,47" controller="PlayerStatsWindow" color="[white]" depth="5" effect="outline" text="Zombie Kills [DECEA3]{playerzombiekills}" justify="left"/>					
-                    <label name="Currentlife" font_size="18" pos="-35,27" controller="PlayerStatsWindow" color="[white]" depth="5" effect="outline" text="Current life [DECEA3]{playercurrentlife}" justify="left"/>										
-                    <label name="Longestlife" font_size="18" pos="-35,47" controller="PlayerStatsWindow" color="[white]" depth="5" effect="outline" text="Longest life [DECEA3]{playerlongestlife}" justify="left"/>
-					-->
-				<rect name="StatInfo" pos="170,53" rows="1" cols="1" width="242" controller="PlayerStatsWindow">	                    
-				<rect name="hud" pos="0,77" rows="1" cols="1" width="242" visible="{statvisible}">
-					<sprite depth="1" pos="0,0" height="37" width="242" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
-					<label depth="5" name="playerXP" pos="8,-4" font_size="24" color="[white]" justify="left" pivot="topleft" text="LvL: [DECEA3]{playerlevel} - [FFFFFF]EXP Need: [DECEA3]{playerxptonextlevel}" controller="PlayerStatsWindow"/>
-					<sprite depth="3" pos="3,-3" height="30" width="235" color="[darkGrey]" foregroundlayer="true" type="sliced"/>
-					<sprite depth="4" pos="3,-3" height="30" width="235" color="{xpcolor}" sprite="menu_empty3px" type="filled" fill="{xp}" globalopacitymod="1.5" controller="ToolbeltWindow" standard_xp_color="90,0,153,200" updating_xp_color="120,0,204,200" deficit_xp_color="[red]" xp_fill_speed="3.5"/>	
-				</rect>	
-			
-				<rect name="hud" pos="0,0" rows="1" cols="1" width="80" visible="{statvisible}">
-					<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
 
-					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_marksmanship" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="KILLS" font_size="12" color="[white]"/>	
-					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerzombiekills}" controller="PlayerStatsWindow"/>					
-
-				</rect>	
-			
-				<rect name="hud" pos="81,0" rows="1" cols="1" width="80" visible="{statvisible}">
-					<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
-
-					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_near_death_trauma" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="DEATHS" font_size="12" color="[white]"/>	
-					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerdeaths}" controller="PlayerStatsWindow"/>					
-
-				</rect>	
-			
-				<rect name="hud" pos="162,0" rows="1" cols="1" width="80" visible="{statvisible}">
-					<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true" />
-
-					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_run_and_gun" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="PVP" font_size="12" color="[white]"/>	
-					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerpvpkills}" controller="PlayerStatsWindow"/>					
-
-				</rect>		
+				<rect name="StatInfo" pos="170,53" rows="1" cols="1" width="242">
 				<!--
-				<rect name="hud" pos="0,39" rows="1" cols="1" width="120" visible="{statvisible}">
-					<sprite depth="1" pos="0,0" height="38" width="120" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
+					<rect name="hud_LvL" pos="0,77" rows="1" cols="1" width="242" visible="{statvisible}">
+						<sprite depth="1" pos="0,0" height="37" width="242" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
+						<label depth="5" name="playerXP" pos="8,-6" font_size="24" color="[white]" justify="left" pivot="topleft" text="LvL: [DECEA3]{levelNumber} - [FFFFFF]EXP Need: [DECEA3]{playerxptonextlevel}"/>
+						<sprite depth="3" pos="3,-3" height="30" width="235" color="[darkGrey]" foregroundlayer="true" type="sliced"/>
+						<sprite depth="4" pos="3,-3" height="30" width="235" color="{xpcolor}" sprite="menu_empty3px" type="filled" fill="{xp}" globalopacitymod="1.5" controller="ToolbeltWindow" standard_xp_color="90,0,153,200" updating_xp_color="120,0,204,200" deficit_xp_color="[red]" xp_fill_speed="3.5"/>	
+					</rect>	
+			
+					<rect name="hud_ZKills" pos="0,0" rows="1" cols="1" width="80" visible="{statvisible}">
+						<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
 
-					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_player" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="Current life" font_size="12" color="[white]"/>	
-					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playercurrentlife}" controller="PlayerStatsWindow"/>	
-				</rect>	
-				-->
-				<rect name="hud" pos="0,39" rows="1" cols="1" width="120" visible="{statvisible}">
-					<sprite depth="1" pos="0,0" height="38" width="120" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
+						<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_marksmanship" color="[iconColor]" foregroundlayer="true"/>
+						<label depth="2" name="Text_KILLS" pos="36,-4" width="80" height="12" text="KILLS" font_size="12" color="[white]"/>	
+						<label depth="2" name="Text_playerzombiekills" pos="36,-16" width="80" height="19" text="[DECEA3]{playerzombiekills}"/>					
 
-					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_compass" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="Travelled" font_size="12" color="[white]"/>	
-					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playertravelled}" controller="PlayerStatsWindow"/>	
-				</rect>	
+					</rect>	
+			
+					<rect name="hud_Deaths" pos="81,0" rows="1" cols="1" width="80" visible="{statvisible}">
+						<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
+
+						<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_near_death_trauma" color="[iconColor]" foregroundlayer="true"/>
+						<label depth="2" name="Text_DEATHS" pos="36,-4" width="80" height="12" text="DEATHS" font_size="12" color="[white]"/>	
+						<label depth="2" name="Text_playerdeaths" pos="36,-16" width="80" height="19" text="[DECEA3]{playerdeaths}"/>					
+
+					</rect>	
+			
+					<rect name="hud_PKills" pos="162,0" rows="1" cols="1" width="80" visible="{statvisible}">
+						<sprite depth="1" pos="0,0" height="38" width="80" color="0,0,0,220" type="sliced" foregroundlayer="true" />
+	
+						<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_run_and_gun" color="[iconColor]" foregroundlayer="true"/>
+						<label depth="2" name="Text_PVP" pos="36,-4" width="80" height="12" text="PVP" font_size="12" color="[white]"/>	
+						<label depth="2" name="Text_playerpvpkills" pos="36,-16" width="80" height="19" text="[DECEA3]{playerpvpkills}"/>					
+
+					</rect>
 				
-				<rect name="hud" pos="121,39" rows="1" cols="1" width="121" visible="{statvisible}">
-					<sprite depth="1" pos="0,0" height="38" width="121" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
+					<rect name="hud_Travel" pos="0,39" rows="1" cols="1" width="120" visible="{statvisible}">
+						<sprite depth="1" pos="0,0" height="38" width="120" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
 
-					<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_skull" color="[iconColor]" foregroundlayer="true"/>
-					<label depth="2" name="TextContent" pos="36,-4" width="80" height="12" text="Longest life" font_size="12" color="[white]"/>	
-					<label depth="2" name="TextContent" pos="36,-16" width="80" height="19" text="[DECEA3]{playerlongestlife}" controller="PlayerStatsWindow"/>					
-
-				</rect>
+						<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_compass" color="[iconColor]" foregroundlayer="true"/>
+						<label depth="2" name="Text_Travelled" pos="36,-4" width="80" height="12" text="Travelled" font_size="12" color="[white]"/>	
+						<label depth="2" name="Text_playertravelled" pos="36,-16" width="80" height="19" text="[DECEA3]{playertravelled}"/>	
+					</rect>	
+				
+					<rect name="hud_LongLife" pos="121,39" rows="1" cols="1" width="121" visible="{statvisible}">
+						<sprite depth="1" pos="0,0" height="38" width="121" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
+	
+						<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_skull" color="[iconColor]" foregroundlayer="true"/>
+						<label depth="2" name="Text_longestlife" pos="36,-4" width="80" height="12" text="Longest life" font_size="12" color="[white]"/>	
+					<label depth="2" name="Text_playerlongestlife" pos="36,-16" width="80" height="19" text="[DECEA3]{playerlongestlife}"/>	
+					</rect>
+				-->
 				</rect>
             </rect>
 
@@ -190,63 +175,99 @@
                 
 
 
-					<rect name="fpsHUDstealthBar" pos="58,110" size="240,55" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}">
-					<sprite depth="0" name="background" color="0,0,0,220" pos="-28,3" size="185,33" globalopacitymod="0" type="sliced"/>
-                    <filledsprite name="barBackground" depth="4" pos="11,-3" size="140,20" atlas="uiAtlas" type="filled" fill="1" color="[darkGrey]"/>
-                    <filledsprite name="BarContent" depth="5" pos="11,-3" size="140,20" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsStealth]"/>
-                    <texture name="Icon" depth="7" pos="-20,0" size="25,25" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_stealth_alt.png" color="[hudElementsIcon]" foregroundlayer="true"/>
-                    <label name="TextContent" depth="7" pos="-5,-1" text="{statcurrent}" font_size="21" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="center" pivot="topleft"/>
+
+					<rect name="hud" pos="116,109" side="left" controller="BuffPopoutList" pivot="BottomLeft" visible="{statvisible}">
+						<panel width="168" height="28" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, -10" style="press" sound="[recipe_click]" on_hover="true">
+							<sprite depth="3" pos="-5,0" name="Background" sprite="ui_game_popup" height="30" width="162" pivot="center" flip="Horizontally" color="[transparent]"/>
+							<sprite depth="4" name="Icon" size="25,25" pos="-60,0" pivot="center" color="[transparent]"/>
+							<label depth="6" name="TextContent" pos="-20,0" font_size="18" color="[white]" justify="center" height="40" pivot="center"/>
+						</panel>
+					</rect>
+					<rect name="fpsHUDstealthBar" pos="58,125" size="240,55" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}">
+						<sprite depth="0" name="background" color="0,0,0,220" pos="-28,3" size="185,33" globalopacitymod="0" type="sliced"/>
+						<!--
+						<sprite depth="1" name="background_Trim" color="[darkGrey]" pos="-28,3" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />
+						-->
+						<filledsprite name="barBackground" depth="4" pos="11,-3" size="140,20" atlas="uiAtlas" type="filled" fill="1" color="[darkGrey]"/>
+						<filledsprite name="BarContent" depth="5" pos="11,-3" size="140,20" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsStealth]"/>
+						<texture name="Icon" depth="7" pos="-20,0" size="25,25" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_stealth_alt.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+						<label name="TextContent" depth="7" pos="-5,-4" text="{statcurrent}" font_size="21" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="center" pivot="topleft"/>
 					</rect>
 
-				<rect name="fpsHUDstatContainer" pos="0,-68">
+				<rect name="fpsHUDstatContainer" pos="0,-68">	
+					<rect name="hud_LvL" pos="30,161" size="15,185" visible="{statvisible}" controller="ToolbeltWindow">
+						<sprite depth="1" pos="0,0" size="185,15" color="0,0,0,220" type="sliced" foregroundlayer="true"/>
+						<!--
+						<sprite depth="1" name="background_Trim" color="[darkGrey]" pos="0,0" size="185,15" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />			
+						-->						
+						<sprite depth="3" pos="3,-3" size="178,8" color="[darkGrey]" foregroundlayer="true" type="sliced"/>
+						<sprite depth="4" pos="3,-3" size="178,8" sprite="menu_empty3px" type="filled" fill="{xp}" globalopacitymod="1.5" color="{xpcolor}" standard_xp_color="194,0,229,255" updating_xp_color="194,0,229,255" deficit_xp_color="[red]" xp_fill_speed="3.5"/>
+					</rect>	  
                     <rect name="fpsHUDhealthBar"  pos="0,150" size="185,49" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
 					
 						<sprite depth="0" name="background" color="0,0,0,220" pos="30,-5" size="185,49" globalopacitymod="0" type="sliced" pivot="topleft"/>
+						<!--
+						<sprite depth="1" name="background_Trim" color="[darkGrey]" pos="30,-5" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />
+						-->
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsHealth]"/>
+						
                         <texture name="Icon" depth="7" pos="31,-2" size="58,58" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_health_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+						<!--
+						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" pos="40,-8" size="44,44" foregroundlayer="true"/>
+						-->
                         <label name="TextContent" depth="7" pos="24,-12" text="{statcurrentwithmax}" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right"/>
 						
 					</rect>
 					<rect name="fpsHUDstaminaBar" pos="0,100" size="185,49" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 
 						<sprite depth="0" name="background" color="0,0,0,220" pos="30,-5" size="185,49" globalopacitymod="0" type="sliced" pivot="topleft"/>
+						<!--
+						<sprite depth="1" name="background_Trim" color="[darkGrey]" pos="30,-5" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />
+						-->
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsStamina]"/>
+						
                         <texture name="Icon" depth="7" pos="31,-3" size="54,54" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Stamina_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+						<!--
+						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" pos="40,-6" size="46,46" foregroundlayer="true"/>
+						-->
                         <label name="TextContent" depth="7" pos="24,-12" text="{statcurrentwithmax}" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right"/>	
 						
 					</rect>
 					<rect name="fpsHUDhungerBar"  pos="0,50" size="185,49" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">	
 						  
 						<sprite depth="0" name="background" color="0,0,0,220" pos="30,-5" size="185,49" globalopacitymod="0" type="sliced" pivot="topleft"/>
+						<!--
+						<sprite depth="1" name="background_Trim" color="[darkGrey]" pos="30,-5" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />
+						-->
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsFood]"/>
+						
                         <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Food_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
-						<label name="TextContent" depth="7" pos="24,-12" text="{playerfood}" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right" controller="PlayerStatsWindow"/>
+						<!--
+						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_fork" pos="40,-9" size="42,42" foregroundlayer="true"/>
+						-->
+						<label name="TextContent" depth="7" pos="24,-12" text="{statcurrent}%" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right"/>
 						
 					</rect>
 					<rect name="fpsHUDthirstBar"  pos="0,0" size="185,49" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">	
 					
 						  <sprite depth="0" name="background" color="0,0,0,220" pos="30,-5" size="185,49" globalopacitymod="0" type="sliced" pivot="topleft"/>
+						  <!--
+						<sprite depth="1" name="background_Trim" color="[darkGrey]" pos="30,-5" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />
+						-->
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsWater]"/>
+						
                         <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Water_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
-						<label name="TextContent" depth="7" pos="24,-12" text="{playerwater}" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right" controller="PlayerStatsWindow"/>
+						<!--
+						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water" pos="40,-9" size="42,42" foregroundlayer="true"/>
+						-->
+						<label name="TextContent" depth="7" pos="24,-12" text="{statcurrent}%" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right"/>
 						
 					</rect>
                 </rect>
-            </rect>
-
-            <rect name="hud" pos="69,231" side="left" controller="BuffPopoutList" pivot="BottomLeft" visible="{statvisible}">
-                <panel width="168" height="28" name="item" visible="false" pivot="right" disableautobackground="true"
-                       pos="70, -10" style="press" sound="[recipe_click]" on_hover="true">
-                    <sprite depth="3" pos="-5,0" name="Background" sprite="ui_game_popup" height="30" width="162"
-                            pivot="center" flip="Horizontally" color="[transparent]"/>
-                    <sprite depth="4" name="Icon" size="25,25" pos="-60,0" pivot="center" color="[transparent]"/>
-                    <label depth="6" name="TextContent" pos="-20,0" font_size="18" color="[white]" justify="center"
-                           height="40" pivot="center"/>
-                </panel>
             </rect>
 
         </window>
@@ -256,39 +277,53 @@
     <remove xpath="/windows/window[@name='windowToolbelt']"/>
 
     <append xpath="/windows">
-        <window name="windowToolbelt" depth="0" pos="0,70" size="900,215" backgroundcolor="[black]"
-                controller="ToolbeltWindow" visible="{toolbeltvisible}" cursor_area="true">
-            
-
-            <rect>
+        <window name="windowToolbelt">
+            <rect  depth="0" pos="-117,70" size="900,215" backgroundcolor="[black]" controller="ToolbeltWindow" cursor_area="true" visible="{toolbeltvisible}">
 				
-				<rect name="Money" pos="569,-36" size="94,24" pivot="BottomRight">
-					<sprite depth="0" name="background" color="0,0,0,220" pos="0,0" size="94,24" globalopacitymod="0" type="sliced"/>
+			<rect name="SideInfo" pos="569,-36" pivot="TopLeft">
+				<rect name="AmmoCount" pos="0,50"  width="130" height="32" controller="HUDStatBar" stat_type="ActiveItem" visible="{statvisible}" >
+						<!--<sprite depth="3" pos="3,0"  name="BarContent" sprite="{statimage|once}" height="46" width="182" />-->						
+						<sprite depth="0" name="background" color="0,0,0,220" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" />
+					<!--
+						<sprite depth="1" name="background_Trim" color="[darkGrey]" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />
+					-->
+						<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon}" size="25,25" pos="3,-3" color="{staticoncolor}" foregroundlayer="true" />
+						<label depth="6" name="TextContent" pos="33,-3" font_size="28" color="[white]" justify="left" text="{statcurrentwithmax}" />
+					
+				</rect>
+				<rect name="Money" pos="0,0" size="94,24" pivot="BottomRight">
+					<sprite depth="0" name="background" color="0,0,0,220" pos="0,0" globalopacitymod="0" type="sliced"/>
+					<!--
+						<sprite depth="1" name="background_Trim" color="[darkGrey]" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />
+					-->
 					<label depth="2" name="availableMoney"  pos="24,0" width="70" height="24" text="{currencyamount}" justify="left" controller="BackpackWindow"/>				
 					<sprite depth="4" name="costIcon"  pos="2,-2" size="20,20" sprite="ui_game_symbol_coin" color="[white]" foregroundlayer="true"/>
 				</rect>
+			</rect>
 
-				<rect name="Slots" pos="-332,0">
-					<grid name="fpsHUDtoolbelt" depth="1" pos="0,0" rows="1" cols="10" cell_width="90" cell_height="75" controller="Toolbelt" repeat_content="true">
+				<rect name="Slots" pos="-332,0" controller="Toolbelt">
+					<grid name="fpsHUDtoolbelt" depth="1" pos="0,0" rows="1" cols="10" cell_width="90" cell_height="75" repeat_content="true">
 						<MadHUD_toolbelt_interface name="0"/>
 					</grid>					
 					<sprite depth="0" name="background" color="0,0,0,220" pos="0,15" size="900,75" globalopacitymod="0" type="sliced" />
 				</rect>
 				
-				<rect name="Numbers" pos="-332,42">
-					<grid name="fpsHUDtoolbeltNumbers" depth="1" pos="35,-6" rows="1" cols="10" cell_width="90" cell_height="60" repeat_content="false">
-						<label name="fpsHUDtbNumber1" depth="10" size="18,21" text="1" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
-						<label name="fpsHUDtbNumber2" depth="10" size="18,21" text="2" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
-						<label name="fpsHUDtbNumber3" depth="10" size="18,21" text="3" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
-						<label name="fpsHUDtbNumber4" depth="10" size="18,21" text="4" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
-						<label name="fpsHUDtbNumber5" depth="10" size="18,21" text="5" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
-						<label name="fpsHUDtbNumber6" depth="10" size="18,21" text="6" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
-						<label name="fpsHUDtbNumber7" depth="10" size="18,21" text="7" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
-						<label name="fpsHUDtbNumber8" depth="10" size="18,21" text="8" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
-						<label name="fpsHUDtbNumber9" depth="10" size="18,21" text="9" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
-						<label name="fpsHUDtbNumber0" depth="10" size="18,21" text="0" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+				<rect name="Numbers" pos="-366,21">
+					<grid name="fpsHUDtoolbeltNumbers" depth="100" pos="35,-8" rows="1" cols="10" cell_width="90" cell_height="60" repeat_content="false">
+						<label name="fpsHUDtbNumber1" depth="10" size="18,18" text="1" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+						<label name="fpsHUDtbNumber2" depth="10" size="18,18" text="2" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+						<label name="fpsHUDtbNumber3" depth="10" size="18,18" text="3" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+						<label name="fpsHUDtbNumber4" depth="10" size="18,18" text="4" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+						<label name="fpsHUDtbNumber5" depth="10" size="18,18" text="5" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+						<label name="fpsHUDtbNumber6" depth="10" size="18,18" text="6" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+						<label name="fpsHUDtbNumber7" depth="10" size="18,18" text="7" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+						<label name="fpsHUDtbNumber8" depth="10" size="18,18" text="8" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+						<label name="fpsHUDtbNumber9" depth="10" size="18,18" text="9" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
+						<label name="fpsHUDtbNumber0" depth="10" size="18,18" text="0" color="white" crispness="Never" effect="outline" effect_distance="1,1" justify="center"/>
 					</grid>
-					<grid name="fpsHUDtoolbeltNumbers" depth="1" pos="35,-5" rows="1" cols="10" cell_width="90" cell_height="60" repeat_content="false">
+					
+					<grid name="fpsHUDtoolbeltNumbers" depth="99" pos="35,-7" rows="1" cols="10" cell_width="90" cell_height="60" repeat_content="false">
+					<!--
 						<sprite depth="0" name="background" color="0,0,0,220" size="18,23" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center"/>
 						<sprite depth="0" name="background" color="0,0,0,220" size="18,23" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center"/>
 						<sprite depth="0" name="background" color="0,0,0,220" size="18,23" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center"/>
@@ -299,10 +334,43 @@
 						<sprite depth="0" name="background" color="0,0,0,220" size="18,23" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center"/>
 						<sprite depth="0" name="background" color="0,0,0,220" size="18,23" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center"/>
 						<sprite depth="0" name="background" color="0,0,0,220" size="18,23" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center"/>
+					-->
+						<sprite depth="0" size="19,19" name="background1" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
+						<sprite depth="0" size="19,19" name="background2" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
+						<sprite depth="0" size="19,19" name="background3" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
+						<sprite depth="0" size="19,19" name="background4" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
+						<sprite depth="0" size="19,19" name="background5" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
+						<sprite depth="0" size="19,19" name="background6" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
+						<sprite depth="0" size="19,19" name="background7" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
+						<sprite depth="0" size="19,19" name="background8" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
+						<sprite depth="0" size="19,19" name="background9" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
+						<sprite depth="0" size="19,19" name="background10" sprite="ui_game_filled_circle" color="0,0,0,250" justify="center" />
 					</grid>
+					
+					
 				</rect>
-				
             </rect>
+				<rect name="hud" pos="-85,70">
+					<rect pos="125,0" width="168" height="46" controller="HUDStatBar" stat_type="VehicleFuel" visible="{statvisible}">
+						<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+						<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+						<sprite depth="2" pos="3,-3"  name="background" height="40" width="162" color="64,64,64,100" type="sliced" />
+						<filledsprite depth="5" name="BarContent" color="0,54,255,128" width="169" type="filled" fill="0" flip="Horizontally" />
+						<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="35,35" pos="148,-24" pivot="center" foregroundlayer="true" />
+						<label depth="6" name="TextContent" pos="125,-24" font_size="32" color="[white]" justify="center" pivot="right" text="{statcurrentwithmax}" width="120" height="35"/>
+						<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+					</rect>
+					<rect pos="-125,0" width="168" height="46" controller="HUDStatBar" stat_type="VehicleHealth" visible="{statvisible}">
+						<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+						<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+						<sprite depth="2" pos="3,-3"  name="background" height="40" width="162" color="64,64,64,100" type="sliced" />
+
+						<filledsprite depth="5" name="BarContent" color="255,0,0,128" width="169" type="filled" fill="0" flip="Horizontally" />
+						<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="35,35" pos="148,-24" pivot="center" foregroundlayer="true" />
+						<label depth="6" name="TextContent" pos="125,-24" font_size="28" color="[white]" justify="center" pivot="right" text="{statcurrentwithmax}" width="120" height="35"/>
+						<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+					</rect>
+				</rect>
         </window>
     </append>
 
@@ -334,7 +402,7 @@
 	<append xpath="/windows">
 		<window name="windowGroupBars" controller="PartyWindow" depth="-20">
 
-			<grid name="hud" pos="20,-25" rows="12" cols="1" width="168" cell_width="168" cell_height="40" side="left" repeat_content="true" controller="PartyEntryList" >
+			<grid name="hud" pos="20,-25" rows="15" cols="1" width="168" cell_width="168" cell_height="40" side="left" repeat_content="true" controller="PartyEntryList" >
 				<MadHUD_party_entry />
 				<!--
 				<party_entry />
@@ -343,4 +411,27 @@
 			</grid>
 		</window>
 	</append>
+	<remove xpath="/windows/window[@name='HUDRightStatBars']"/>
+	<append xpath="/windows">
+	<window name="HUDRightStatBars">
+
+		<rect name="hud" pos="-90,32" side="right" controller="CollectedItemList" pivot="BottomLeft">
+			<panel width="168" height="46" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
+				<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="44" width="162" pivot="center" />
+				<sprite depth="4" name="Icon" atlas="ItemIconAtlas"  size="38,38" pos="50,0" pivot="center" foregroundlayer="true"/>
+				<label depth="6" pos="12,0" name="TextContent" font_size="30" color="[white]" justify="right" height="32" pivot="right"/>
+				<sprite depth="6" pos="0,16" width="36" height="36" name="Negative" sprite="ui_game_symbol_x" color="[red]" />
+			</panel>
+
+			 <!-- <rect width="168" height="43" controller="CollectedItem">
+				<sprite depth="3" pos="3,0"  name="Background" sprite="{itembackground}" height="43" width="162" color="{itembackgroundcolor}" />
+				<sprite depth="4" name="Icon" atlas="ItemIconAtlas" sprite="{itemicon}" size="32,32" pos="130,-6" color="{itemiconcolor}" />
+				<label depth="6" name="TextContent" pos="15,-10" font_size="28" color="[white]" justify="center" text="{itemcount}" height="30"/>
+			</rect> -->
+		</rect>
+		
+
+	</window>
+	</append>
+	
 </configs>

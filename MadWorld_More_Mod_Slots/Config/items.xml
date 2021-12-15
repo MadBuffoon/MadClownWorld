@@ -8,4 +8,16 @@
 	<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
 	</append>	
 	
+	<append xpath="/items/item[starts-with(@name, 'armor')]/effect_group[contains(@name, 'armor')]">
+	<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+	</append>	
+	
+		<!--Items that need to be called out to mod
+		armorMiningHelmet
+		armorFootballHelmet
+		-->
+	<append xpath="/items/item[starts-with(@name, 'armor')]/effect_group[contains(@name, 'scrap')]">
+	<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+	</append>	
+	
 </config>

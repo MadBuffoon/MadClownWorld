@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="MadWorld_Item_Rarity_Colors" />
+		<Description value="Changes them the item rarity colors to be more like wow" />
+		<Author value="MadBuffoon" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

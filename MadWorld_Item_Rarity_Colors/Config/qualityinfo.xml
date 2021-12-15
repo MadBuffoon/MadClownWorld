@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qualityinfo>
+<set xpath="/qualityinfo">
+  <!--Broken-->
+	<quality key="0" color="CC0000"/>
+  <!--Junk -->
+	<quality key="1" color="999999"/>
+  <!--Common-->
+	<quality key="2" color="EEEEEE"/>
+  <!--Uncommon-->
+	<quality key="3" color="42C234"/>
+  <!--Rare-->
+	<quality key="4" color="315DCE"/>
+  <!--Epic-->
+	<quality key="5" color="A42ACC"/>
+  <!--Legendary-->
+	<quality key="6" color="FF8200"/>
+	</set>
+</qualityinfo>

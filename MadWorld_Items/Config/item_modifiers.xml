@@ -207,7 +207,6 @@
 		<property name="CustomIcon" value="modMeleeStunBatonRepulsor"/>
 		<property name="CustomIconTint" value="255,90,0" />
 		<property name="TintColor" value="255,90,0"/>
-		<property name="DescriptionKey" value="modGunAntiPersonnelDesc"/>
 		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<!-- Muzzle brake: Directs some of the gases upwards to reduce recoil. Typically increases visibility of the gun/shooter as a result. -->
@@ -222,6 +221,87 @@
 		</effect_group>
 			<!-- <passive_effect name="DamageFalloffRange" operation="base_add" value="-5"/> -->
 	</item_modifier>
+	
+	
+<item_modifier name="ModDMG1" installable_tags="tool,weapon" blocked_tags="noMods" type="attachment" modifier_tags="dmg">
+		<property name="UnlockedBy" value="MadDamageMod"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
+		<property name="CustomIconTint" value="255,155,0"/> 
+
+		<effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.2"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+		</effect_group>
+</item_modifier>
+
+<item_modifier name="ModDMG2" installable_tags="tool,weapon" blocked_tags="noMods" type="attachment" modifier_tags="dmg">
+		<property name="UnlockedBy" value="MadDamageMod"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
+		<property name="CustomIconTint" value="255,255,0"/> 
+
+		<effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value=".3"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".3"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.3"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+		</effect_group>
+</item_modifier>
+
+<item_modifier name="ModDMG3" installable_tags="tool,weapon" blocked_tags="noMods" type="attachment" modifier_tags="dmg">
+		<property name="UnlockedBy" value="MadDamageMod"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
+		<property name="CustomIconTint" value="0,255,0"/> 
+
+		<effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value=".4"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".4"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.4"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+		</effect_group>
+</item_modifier>
+
+<item_modifier name="ModDMG4" installable_tags="tool,weapon" blocked_tags="noMods" type="attachment" modifier_tags="dmg">
+		<property name="UnlockedBy" value="MadDamageMod"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
+		<property name="CustomIconTint" value="0,0,255"/> 
+
+		<effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".5"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.5"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+		</effect_group>
+</item_modifier>
+
+<item_modifier name="ModDMG5" installable_tags="tool,weapon" blocked_tags="noMods" type="attachment" modifier_tags="dmg">
+		<property name="UnlockedBy" value="MadDamageMod"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
+		<property name="CustomIconTint" value="255,0,255"/> 
+
+		<effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value=".6"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".6"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.6"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+		</effect_group>
+</item_modifier>
 
 </append>
 <!-- Item/Installable Tags:

@@ -5,36 +5,82 @@
 		</effect_group>
 	</append>
 	
+	
+<append xpath="/progression/attributes">
+	<attribute name="MadClownWorld"  name_key="MadClownWorldItems" desc_key="MadClownWorldItemsDesc" icon="ui_game_symbol_trophy" min_level="1" max_level="1">
+
+						<!-- the following has no effect it's just there as a place holder to avoid errors -->
+	<effect_group>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="1"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="2"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="3"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="4"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="5"/>	
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="6"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="7"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="8"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="9"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="10"/>	
+
+			<effect_description level="1" desc_base=" " long_desc_key=" "/>
+			<effect_description level="2" desc_base=" " long_desc_key=" "/>
+			<effect_description level="3" desc_base=" " long_desc_key=" "/>
+			<effect_description level="4" desc_base=" " long_desc_key=" "/>
+			<effect_description level="5" desc_base=" " long_desc_key=" "/>
+			<effect_description level="6" desc_base=" " long_desc_key=" "/>
+			<effect_description level="7" desc_base=" " long_desc_key=" "/>
+			<effect_description level="8" desc_base=" " long_desc_key=" "/>
+			<effect_description level="9" desc_base=" " long_desc_key=" "/>
+			<effect_description level="10" desc_base=" " long_desc_key=" "/>
+		</effect_group>
+						<!-- end of the place holder -->
+	</attribute>
+</append>	
 		<append xpath="/progression/perks">
 
-<perk name="SuperTool" parent="LamsBonus" name_key="Super Things" desc_key="Unlock Super Things." icon="ui_game_symbol_misc_crafting">
+			<perk name="Items" parent="MadClownWorld" name_key="Items" desc_key="Unlock EndGame Items" icon="ui_game_symbol_misc_crafting">
 
 
-		<level_requirements level="1">
-					<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering"    operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
-					<requirement name="ProgressionLevel" progression_name="PowerToolExpert"  operation="GTE" value="5" desc_key="reqPowerToolExpertLevel05"/>
-					<requirement name="ProgressionLevel" progression_name="LamModPowerBonus"  operation="GTE" value="5" desc_key="reqLamModPowerBonusLevel05"/>
-		</level_requirements>
+				<level_requirements level="1">
+							<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering"    operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
+				</level_requirements>
+				<level_requirements level="2">
+							<requirement name="ProgressionLevel" progression_name="perkMiner69r"  operation="GTE" value="5" desc_key="Miner69rLevel05"/>
+							<requirement name="ProgressionLevel" progression_name="perkSalvageOperations"   operation="GTE" value="5" desc_key="reqSalvageOperationsLevel05"/>
+							<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering"    operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
+							<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="5" desc_key="reqGreaseMonkeyLevel05"/>
+				</level_requirements>
+				<effect_group>	
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,2" value="1" tags="modDMGvSpeed"/>		
+					<effect_description level="1" desc_base="Damage Vs Speed" long_desc_key="DamageVsSpeedDesc"/>
+					<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,2" value="1" tags="SuperNailgun"/>
+					<effect_description level="2" desc_base="SuperNailgun" long_desc_key="SuperNailgunDesc"/>
+				</effect_group>
+			</perk>
+			<perk name="MadDamageMod" parent="MadClownWorld" name_key="Damage Mod" desc_key="Craft modules to install into tools or weapons to increase the block,entity DMG by up to 60% and up to 60% Less Degradation Taken." icon="ui_game_symbol_book">
+
+				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="Intellect lvl 2"/></level_requirements>
+				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="Intellect lvl 4"/></level_requirements>
+				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="Intellect lvl 6"/></level_requirements>
+				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="Intellect lvl 8"/></level_requirements>
+				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="Intellect lvl 10"/></level_requirements>
+
+			<effect_group>
 		
-		<level_requirements level="2">
-					<requirement name="ProgressionLevel" progression_name="perkMiner69r"  operation="GTE" value="5" desc_key="Miner69rLevel05"/>
-					<requirement name="ProgressionLevel" progression_name="perkSalvageOperations"   operation="GTE" value="5" desc_key="reqSalvageOperationsLevel05"/>
-					<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering"    operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
-					<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="5" desc_key="reqGreaseMonkeyLevel05"/>
-					<requirement name="ProgressionLevel" progression_name="PowerToolExpert"  operation="GTE" value="5" desc_key="reqPowerToolExpertLevel05"/>					
-					<requirement name="ProgressionLevel" progression_name="LamModPowerBonus"  operation="GTE" value="5" desc_key="reqLamModPowerBonusLevel05"/>
-		</level_requirements>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1"	tags="ModDMG1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1"	tags="ModDMG2"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"	tags="ModDMG3"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1"	tags="ModDMG4"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1"	tags="ModDMG5"/>
+			
+				<effect_description level="1" desc_base="Module DMG 20%" long_desc_key="ModDMG1Desc"/>
+				<effect_description level="2" desc_base="Module DMG 30%" long_desc_key="ModDMG2Desc"/>
+				<effect_description level="3" desc_base="Module DMG 40%" long_desc_key="ModDMG3Desc"/>
+				<effect_description level="4" desc_base="Module DMG 50%" long_desc_key="ModDMG4Desc"/>
+				<effect_description level="5" desc_base="Module DMG 60%" long_desc_key="ModDMG5Desc"/>
 
-
-	<effect_group>	
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,2" value="1" tags="modDMGvSpeed"/>		
-		<effect_description level="1" desc_base="Damage Vs Speed" long_desc_key="This unlocks a mod: \nDamage 40% UP\nRounds Per Minute Down 40% \nAttacks Per Minute Down 40% \nTHE END GAME MOD!"/>
+			</effect_group>
 		
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,2" value="1" tags="SupperNailgun"/>
-		<effect_description level="2" desc_base="SupperNailgun" long_desc_key="This unlocks the SupperNailgun! \nTHE END GAME Tool!"/>
-
-	</effect_group>
-</perk>	
-
+		</perk>
 	</append>
 </config>

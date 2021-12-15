@@ -1,6 +1,6 @@
 <config>
-
-	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+<!--
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
 		<lootgroup name="vehiclemods" count="1">
 			<item name="modEngine01" count="1"/>
 			<item name="modEngine02" count="1"/>
@@ -12,17 +12,16 @@
 		</lootgroup>
 	</insertAfter>
 	
-	<append xpath="/lootcontainers/lootgroup[@name='automotive']">
+	<append xpath="/lootcontainers/lootgroup[@name='groupAutomotive']">
 		<item group="vehiclemods"/>
 	</append>	
 	
 	<append xpath="/lootcontainers/lootgroup[@name='workingStiffsBox']">
 		<item group="vehiclemods"/>
 	</append>
-	
-<!-- There is now 50% chance to find between 1 and 5 eggs in every brid nest -->
-<remove xpath="/lootcontainers/lootgroup[@name='groupBirdNest']" />		
-	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupWeaponsBagLoot']">
+		-->
+<remove xpath="/lootcontainers/lootgroup[@name='groupBirdNest']"/>
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupBirdNest02']">
 		<lootgroup name="foodEggLoot" count="all">
 			<item name="foodEgg" count="1,4"/>
 		</lootgroup>
@@ -34,4 +33,5 @@
 			<item group="resourceFeatherLoot"/>
 		</lootgroup>
 	</insertAfter>
+
 </config>

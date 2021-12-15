@@ -6,6 +6,7 @@
 <set xpath = "/twitch/action[@name='twitch_buffAntiLeech']/property[@name='default_cost']/@value">100</set>
 <set xpath = "/twitch/action[@name='twitch_buffDistort']/property[@name='default_cost']/@value">200</set>
 <set xpath = "/twitch/action[@name='twitch_buffDistort']/property[@name='cooldown']/@value">600</set>
+<set xpath = "/twitch/action[@name='twitch_buffSillySounds']/property[@name='cooldown']/@value">30</set>
 
 
 <!--

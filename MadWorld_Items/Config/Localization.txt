@@ -1,21 +1,21 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english
 
 
-TacticalARFull,item_modifiers,items,,,Tactical AR Auto
+gunTacticalARFull,item_modifiers,items,,,Tactical AR Auto
 TacticalARFullDesc,item_modifiers,Mod,,,Mad!
 
-MadTacticalARFullDEV,item_modifiers,items,,,Mad AR Auto
+gunMadTacticalARFullDEV,item_modifiers,items,,,Mad AR Auto
 MadTacticalARFullDEVDesc,item_modifiers,Mod,,,Mad Killer!
 
-MadAkDiggerToolDEV,item_modifiers,items,,,Mad Digger
+gunMadAkDiggerToolDEV,item_modifiers,items,,,Mad Digger
 MadAkDiggerToolDEVDesc,item_modifiers,Mod,,,Digs and give you the shit!
 
 
 modNightvision,items,,,,Nightvision Mod
 modNightvisionDesc,items,,,,This module can be installed into your head gear.
 
-SupperNailgun,items,,,,Supper Nailgun
-SupperNailgunDesc,items,,,,Supper Nailgun is the endgame TOOL!
+SuperNailgun,items,,,,Super Nailgun
+SuperNailgunDesc,items,,,,Super Nailgun is the endgame TOOL!
 
 
 
@@ -25,6 +25,32 @@ reqAdvancedEngineeringLevel05,progression,Attribute,,,Advanced Engineering Level
 reqGreaseMonkeyLevel05,progression,Attribute,,,GreaseMonkey Level 5
 reqPowerToolExpertLevel05,progression,Attribute,,,Power Tool Expert Level 5
 reqLamModPowerBonusLevel05,progression,Attribute,,,Mod Power Bonus Level 5
+
+MadClownWorld,progression,Attribute,,,[FFA500]MadClownWorld's Perks
+MadClownWorldItems,progression,Attribute,,,[FFA500]MadClownWorld's Perks
+MadClownWorldItemsDesc,progression,Attribute,,,This is for MadClownWorld Items and Perks For unlock.
+DamageVsSpeedDesc,progression,Attribute,,,This unlocks a mod: \nDamage 40% UP\nRounds Per Minute Down 40% \nAttacks Per Minute Down 40% \nTHE END GAME MOD!
+SuperNailgunDesc,progression,Attribute,,,This unlocks the SuperNailgun! \nTHE END GAME Tool!
+ModDMG1Desc,progression,Attribute,,,Install this module into your tool or weapon for: \n20% More DMG \n20% Less Degradation Taken
+ModDMG2Desc,progression,Attribute,,,Install this module into your tool or weapon for: \n30% More DMG \n30% Less Degradation Taken
+ModDMG3Desc,progression,Attribute,,,Install this module into your tool or weapon for: \n40% More DMG \n40% Less Degradation Taken
+ModDMG4Desc,progression,Attribute,,,Install this module into your tool or weapon for: \n50% More DMG \n50% Less Degradation Taken
+ModDMG5Desc,progression,Attribute,,,Install this module into your tool or weapon for: \n60% More DMG \n60% Less Degradation Taken
+
+ModDMG1,,items,Item,New,20% Damage Mod
+ModDMG1Desc,,items,Item,New,"Install this module into your tool or weapon for: \n20% More DMG \n20% Less Degradation Taken",,,,,
+ModDMG2,,items,Item,New,30% Damage Mod
+ModDMG2Desc,,items,Item,New,"Install this module into your tool or weapon for: \n30% More DMG \n30% Less Degradation Taken",,,,,
+ModDMG3,,items,Item,New,40% Damage Mod
+ModDMG3Desc,,items,Item,New,"Install this module into your tool or weapon for: \n40% More DMG \n40% Less Degradation Taken",,,,,
+ModDMG4,,items,Item,New,50% Damage Mod
+ModDMG4Desc,,items,Item,New,"Install this module into your tool or weapon for: \n50% More DMG \n50% Less Degradation Taken",,,,,
+ModDMG5,,items,Item,New,60% Damage Mod
+ModDMG5Desc,,items,Item,New,"Install this module into your tool or weapon for: \n60% More DMG \n60% Less Degradation Taken",,,,,
+
+modGunAntiPersonnel,,items,Item,New,Anti-Personnel Ammo Modifier
+modGunAntiPersonnelDesc,,items,Item,New,"Changes Ammo to Anti-Personnel\nDoes More 20% More Damage to Flesh and No damage to Blockes.\nAlso Reduces Recoil",,,,,
+
 
 
 modEngine01,item_modifiers,items,,,Engine Type 1
@@ -49,6 +75,11 @@ modBike01Desc,item_modifiers,items,,,Only For the Bike! \nThis chain helps you g
 modDMGvSpeed,item_modifiers,items,,,Damage Vs Speed
 modDMGvSpeedDesc,item_modifiers,items,,,Damage 40% UP\nRounds Per Minute Down 40% \nAttacks Per Minute Down 40%
 
-modGunAntiPersonnel,item_modifiers,items,,,Anti-Personnel Ammo Modifier
-modGunAntiPersonnelDesc,item_modifiers,items,,,Changes Ammo to Anti-Personnel\nDoes More 20% More Damage to Flesh and No damage to Blockes.\nAlso Reduces Recoil
+
+
+gunHandgunT0PipePistolEndless,items,,,,Pipe Pistol Endless
+gunShotgunT0PipeShotgunEndless,items,,,,Pipe Shotgun Endless
+gunRifleT0PipeRifleEndless,items,,,,Pipe Rifle Endless
+gunMGT0PipeMachineGunEndless,items,,,,Pipe Machine Gun Endless
+
 

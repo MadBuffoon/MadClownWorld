@@ -19,7 +19,7 @@
 			<ingredient name="resourceSewingKit" count="5"/>
 		</recipe>
 		
-		<recipe name="SupperNailgun" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,SuperTool">
+		<recipe name="SuperNailgun" count="1" craft_area="workbench" tags="learnable,workbenchCrafting,SuperTool">
 			<ingredient name="meleeToolPickT3Auger" count="1"/>
 			<ingredient name="meleeToolAxeT3Chainsaw" count="1"/>
 			<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
@@ -41,6 +41,46 @@
 			<ingredient name="resourceOil" count="2"/>
 			<ingredient name="resourceMechanicalParts" count="2"/>
 		</recipe>
+		
+<recipe name="ModDMG1" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="resourceMetalPipe" count="2"/>
+	<ingredient name="resourceScrapPolymers" count="50"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+</recipe>
+
+<recipe name="ModDMG2" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="15"/>
+	<ingredient name="resourceMetalPipe" count="3"/>
+	<ingredient name="resourceScrapPolymers" count="75"/>
+	<ingredient name="resourceDuctTape" count="3"/>
+	<ingredient name="resourceMechanicalParts" count="6"/>
+</recipe>
+
+<recipe name="ModDMG3" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="20"/>
+	<ingredient name="resourceMetalPipe" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="100"/>
+	<ingredient name="resourceDuctTape" count="4"/>
+	<ingredient name="resourceMechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="ModDMG4" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="25"/>
+	<ingredient name="resourceMetalPipe" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="125"/>
+	<ingredient name="resourceDuctTape" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+</recipe>
+
+<recipe name="ModDMG5" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="30"/>
+	<ingredient name="resourceMetalPipe" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="150"/>
+	<ingredient name="resourceDuctTape" count="6"/>
+	<ingredient name="resourceMechanicalParts" count="12"/>
+</recipe>
 		
 	</append>
 </configs>

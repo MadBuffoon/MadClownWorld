@@ -1,0 +1,93 @@
+<configs>
+	<append xpath="/recipes">
+		
+		<recipe name="Dye: Turquoise" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: Royal Purple" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: Gold" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: Silver" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: Bronze" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: Lime" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: Candy Pink" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: Orange" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: True Blue" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: True Black" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: True Red" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: Steel" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="Dye: Royal Blue" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		<!--
+		<recipe name="modDyeWhite" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		-->
+		<recipe name="modDyeRed" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="modDyeGreen" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="modDyeBlack" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="modDyeBlue" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="modDyeBrown" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="modDyePink" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="modDyePurple" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+		<recipe name="modDyeYellow" count="1">
+			<ingredient name="resourcePaint" count="30"/>
+		</recipe>
+		
+	</append>
+</configs>

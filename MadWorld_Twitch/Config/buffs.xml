@@ -1,0 +1,9 @@
+<config>
+
+<!-- Modified Buff Times-->
+
+<set xpath = "/buffs/buff[@name='twitch_buffSillySounds']/duration/@value">300</set>
+
+
+
+</config>

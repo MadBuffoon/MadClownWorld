@@ -44,7 +44,7 @@
 <entity_class name="TwitchAction_SupplyMadOP1" extends="twitch_madcrate_template"> 
 	<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab"/>
 	<property name="TintColor" value="255,0,0"/>
-	<property name="LootListOnDeath" value="700"/>
+	<property name="LootListOnDeath" value="twitch_madcrate_OP"/>
 </entity_class>
 </append>
 

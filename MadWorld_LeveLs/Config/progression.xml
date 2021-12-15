@@ -1,0 +1,7 @@
+<config>	
+	<set xpath="/progression/level/@max_level">500</set>							<!-- original value 300 	-->
+	<set xpath="/progression/level/@exp_to_level">2000</set>						<!-- original value 10000 	-->
+	<set xpath="/progression/level/@experience_multiplier">1.05</set>				<!-- original value 10000 	-->
+	<set xpath="/progression/level/@clamp_exp_cost_at_level">80</set>				<!-- original value 60 	-->
+<!--	<set xpath="/progression/level/@skill_points_per_level">1</set>		-->		<!-- original value 1 	-->
+</config>
