@@ -7,14 +7,13 @@
 			<rect controller="${controller}" style="itemStack, hover, fpsHUD_toolbelt_interface" collider_scale="1.1" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" >
 				<sprite name="background" depth="102" pos="0,15" size="90,75" color="[darkGrey]" type="sliced" fillcenter="false" globalopacity="true" />
 				<sprite name="highlightOverlay" depth="103" pos="0,15" size="90,75" color="{selectionbordercolor}" type="sliced" globalopacity="true" visible="true" fillcenter="false" />
-
 				<sprite name="itemIcon" depth="6" pos="42,-20" size="57,57" atlas="ItemIconAtlas" sprite="{itemicon}" color="{iconcolor}" foregroundlayer="true" pivot="center" />
 				<sprite name="favoriteIcon" depth="8"  pos="4,-9" size="15,15" sprite="server_favorite" foregroundlayer="true" visible="{isfavorite}"/>
 				<sprite name="lockTypeIcon" depth="8" pos="4,-9" size="15,15" sprite="" foregroundlayer="true" />
 				<sprite name="itemtypeicon" depth="3" pos="4,-9" size="15,15" sprite="ui_game_symbol_{itemtypeicon}" color="[white]" foregroundlayer="true" visible="{hasitemtypeicon}" />
 
-				<sprite name="durabilityBackground" depth="3" pos="1,-51" size="88,7" atlas="uiAtlas" color="[black]" type="sliced" foregroundlayer="true" visible="{hasdurability}" />
-				<filledsprite name="durability" depth="4" pos="1,-51" size="88,7" atlas="uiAtlas"  color="{durabilitycolor}" fill="{durabilityfill}" type="filled" foregroundlayer="true" visible="{hasdurability}" />
+				<sprite name="durabilityBackground" depth="104" pos="1,-51" size="88,7" atlas="uiAtlas" color="[black]" type="sliced" foregroundlayer="true" visible="{hasdurability}" />
+				<filledsprite name="durability" depth="105" pos="1,-51" size="88,7" atlas="uiAtlas"  color="{durabilitycolor}" fill="{durabilityfill}" type="filled" foregroundlayer="true" visible="{hasdurability}" />
 				<!--<label depth="7" name="durabilityValue" pos="-2,-30" width="70" height="28" text="{durabilityfill}" font_size="26" effect="outline" justify="Center" />-->
 
 				<sprite name="disabledOverlay" depth="5" pos="1,-1" size="82,82" color="[darkGrey_half_alpha]" type="sliced" visible="false" />

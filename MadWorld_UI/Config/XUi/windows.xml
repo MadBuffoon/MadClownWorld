@@ -58,8 +58,9 @@
         <window name="windowCompass" pos="-190,-35" size="380,43" controller="CompassWindow">
 
             <!-- Environmental Information -->
-            <sprite pos="65,-50" sprite="" color="255,255,255,255" globalopacitymod="1.8">			
-				<sprite depth="0" name="background" color="0,0,0,220" pos="-37,12" size="325,27" globalopacitymod="0" type="sliced" />
+            <sprite pos="65,-47" sprite="" color="255,255,255,255" globalopacitymod="1.8">			
+				<!--<sprite depth="0" name="background" color="0,0,0,220" pos="-37,12" size="325,27" globalopacitymod="0" type="sliced" />-->
+				<texture name="Background_IMG" depth="0" pos="-37,12" height="27" width="337" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/Fade3.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 				
                 <label name="fpsHUDday" depth="2" pos="5,-2" width="70" height="30"
                        text="Day  [{daycolor|always}]{day|always}" font_size="20" crispness="Never" effect="outline"
@@ -78,11 +79,10 @@
                        pivot="center" justify="center" controller="MapStats"/>
             </sprite>
             <!--background for custom compass-->
-            <sprite depth="0" name="background" color="0,0,0,220" pos="-37,15" size="455, 50" globalopacitymod="0" type="sliced" />
+            <!--<sprite depth="0" name="background" color="0,0,0,220" pos="-37,15" size="455, 50" globalopacitymod="0" type="sliced" />-->
+			<texture name="Background_IMG" depth="0" pos="-37,15" height="50" width="455" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/Fade2.png" color="[hudElementsIcon]" foregroundlayer="true"/>
             <!--marker for custom compass-->
-            <texture name="fpsHUDcompassMarker" depth="5" pos="170,15" size="42,64"
-                     texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_hud_compass_marker.png"
-                     color="[darkGrey]"/>
+            <texture name="fpsHUDcompassMarker" depth="5" pos="170,15" size="42,64" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_hud_compass_marker.png" color="[darkGrey]"/>
             <!--custom compass texture-->
             <texture name="compassTexture" depth="4" pos="0,5" size="380,30" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_compass.png" tooltip="Navigation" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.375},0"/>
 
@@ -280,24 +280,16 @@
         <window name="windowToolbelt">
             <rect  depth="0" pos="-117,70" size="900,215" backgroundcolor="[black]" controller="ToolbeltWindow" cursor_area="true" visible="{toolbeltvisible}">
 				
-			<rect name="SideInfo" pos="569,-36" pivot="TopLeft">
-				<rect name="AmmoCount" pos="0,50"  width="130" height="32" controller="HUDStatBar" stat_type="ActiveItem" visible="{statvisible}" >
-						<!--<sprite depth="3" pos="3,0"  name="BarContent" sprite="{statimage|once}" height="46" width="182" />-->						
-						<sprite depth="0" name="background" color="0,0,0,220" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" />
-					<!--
-						<sprite depth="1" name="background_Trim" color="[darkGrey]" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />
-					-->
-						<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon}" size="25,25" pos="3,-3" color="{staticoncolor}" foregroundlayer="true" />
-						<label depth="6" name="TextContent" pos="33,-3" font_size="28" color="[white]" justify="left" text="{statcurrentwithmax}" />
+			<rect name="SideInfo" pos="569,-36" pivot="TopLeft">			
+				<texture name="Background_IMG" depth="0" pos="0,50" height="74" width="200" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/fade1.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+				<rect name="AmmoCount" pos="0,50" controller="HUDStatBar" stat_type="ActiveItem" visible="{statvisible}" >
+						<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon}" size="35,35" pos="5,-5" color="{staticoncolor}" foregroundlayer="true" />
+						<label depth="6" name="TextContent" pos="44,-5" font_size="35" color="[white]" justify="left" text="{statcurrentwithmax}" />
 					
 				</rect>
-				<rect name="Money" pos="0,0" size="94,24" pivot="BottomRight">
-					<sprite depth="0" name="background" color="0,0,0,220" pos="0,0" globalopacitymod="0" type="sliced"/>
-					<!--
-						<sprite depth="1" name="background_Trim" color="[darkGrey]" globalopacitymod="0" type="sliced" effect_distance="1,1" justify="center" fillcenter="false" />
-					-->
-					<label depth="2" name="availableMoney"  pos="24,0" width="70" height="24" text="{currencyamount}" justify="left" controller="BackpackWindow"/>				
-					<sprite depth="4" name="costIcon"  pos="2,-2" size="20,20" sprite="ui_game_symbol_coin" color="[white]" foregroundlayer="true"/>
+				<rect name="Money" pos="5,5" pivot="BottomRight">				
+					<sprite depth="4" name="costIcon"  pos="3,-2" size="20,20" sprite="ui_game_symbol_coin" color="[white]" foregroundlayer="true"/>
+					<label depth="6" name="availableMoney"  pos="28,0" height="26" text="{currencyamount}" justify="left" controller="BackpackWindow"/>
 				</rect>
 			</rect>
 
