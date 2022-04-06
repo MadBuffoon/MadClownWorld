@@ -211,11 +211,11 @@
 						-->
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsHealth]"/>
-						
-                        <texture name="Icon" depth="7" pos="31,-2" size="58,58" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_health_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						<!--
-						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" pos="40,-8" size="44,44" foregroundlayer="true"/>
+                        <texture name="Icon" depth="7" pos="31,-2" size="58,58" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_health_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						-->
+						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" pos="40,-8" size="44,44" foregroundlayer="true"/>
+						
                         <label name="TextContent" depth="7" pos="24,-12" text="{statcurrentwithmax}" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right"/>
 						
 					</rect>
@@ -227,11 +227,11 @@
 						-->
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsStamina]"/>
-						
-                        <texture name="Icon" depth="7" pos="31,-3" size="54,54" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Stamina_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						<!--
-						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" pos="40,-6" size="46,46" foregroundlayer="true"/>
+                        <texture name="Icon" depth="7" pos="31,-3" size="54,54" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Stamina_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						-->
+						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" pos="40,-6" size="46,46" foregroundlayer="true"/>
+						
                         <label name="TextContent" depth="7" pos="24,-12" text="{statcurrentwithmax}" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right"/>	
 						
 					</rect>
@@ -243,11 +243,11 @@
 						-->
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsFood]"/>
-						
-                        <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Food_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						<!--
-						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_fork" pos="40,-9" size="42,42" foregroundlayer="true"/>
+                        <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Food_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						-->
+						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_fork" pos="40,-9" size="42,42" foregroundlayer="true"/>
+						
 						<label name="TextContent" depth="7" pos="24,-12" text="{statcurrent}%" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right"/>
 						
 					</rect>
@@ -259,11 +259,11 @@
 						-->
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsWater]"/>
-						
-                        <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Water_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						<!--
-						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water" pos="40,-9" size="42,42" foregroundlayer="true"/>
+                        <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Water_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						-->
+						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water" pos="40,-9" size="42,42" foregroundlayer="true"/>
+						
 						<label name="TextContent" depth="7" pos="24,-12" text="{statcurrent}%" font_size="32" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="right"/>
 						
 					</rect>
@@ -388,8 +388,7 @@
             <sprite color="[black]" pos="0, -50" height="200" type="sliced" globalopacitymod="0.9" />
         </window>
     </append>
-	
-	<!-- Party -->
+
     <remove xpath="/windows/window[@name='windowGroupBars']"/>
 
 	<append xpath="/windows">

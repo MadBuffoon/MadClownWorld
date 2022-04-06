@@ -60,7 +60,7 @@
             <!-- Environmental Information -->
             <sprite pos="65,-47" sprite="" color="255,255,255,255" globalopacitymod="1.8">			
 				<!--<sprite depth="0" name="background" color="0,0,0,220" pos="-37,12" size="325,27" globalopacitymod="0" type="sliced" />-->
-				<texture name="Background_IMG" depth="0" pos="-37,12" height="27" width="337" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/Fade3.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+				<texture name="Background_IMG" depth="0" pos="-37,12" height="27" width="337" texture="@modfolder(MadWorld_UI)://Textures/ui_game_Fade3.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 				
                 <label name="fpsHUDday" depth="2" pos="5,-2" width="70" height="30"
                        text="Day  [{daycolor|always}]{day|always}" font_size="20" crispness="Never" effect="outline"
@@ -80,11 +80,11 @@
             </sprite>
             <!--background for custom compass-->
             <!--<sprite depth="0" name="background" color="0,0,0,220" pos="-37,15" size="455, 50" globalopacitymod="0" type="sliced" />-->
-			<texture name="Background_IMG" depth="0" pos="-37,15" height="50" width="455" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/Fade2.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+			<texture name="Background_IMG" depth="0" pos="-37,15" height="50" width="455" texture="@modfolder(MadWorld_UI)://Textures/ui_game_Fade2.png" color="[hudElementsIcon]" foregroundlayer="true"/>
             <!--marker for custom compass-->
-            <texture name="fpsHUDcompassMarker" depth="5" pos="170,15" size="42,64" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_hud_compass_marker.png" color="[darkGrey]"/>
+            <texture name="fpsHUDcompassMarker" depth="5" pos="170,15" size="42,64" texture="@modfolder(MadWorld_UI)://Textures/ui_hud_compass_marker.png" color="[darkGrey]"/>
             <!--custom compass texture-->
-            <texture name="compassTexture" depth="4" pos="0,5" size="380,30" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_compass.png" tooltip="Navigation" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.375},0"/>
+            <texture name="compassTexture" depth="4" pos="0,5" size="380,30" texture="@modfolder(MadWorld_UI)://Textures/ui_game_compass.png" tooltip="Navigation" rect_size="0.25,1" rect_offset="{#compass_rotation / 360 + 0.375},0"/>
 
         </window>
     </append>
@@ -190,7 +190,7 @@
 						-->
 						<filledsprite name="barBackground" depth="4" pos="11,-3" size="140,20" atlas="uiAtlas" type="filled" fill="1" color="[darkGrey]"/>
 						<filledsprite name="BarContent" depth="5" pos="11,-3" size="140,20" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsStealth]"/>
-						<texture name="Icon" depth="7" pos="-20,0" size="25,25" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_stealth_alt.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+						<texture name="Icon" depth="7" pos="-20,0" size="25,25" texture="@modfolder(MadWorld_UI)://Textures/ui_game_stealth_alt.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						<label name="TextContent" depth="7" pos="-5,-4" text="{statcurrent}" font_size="21" color="[hudElementsLBLPri]" crispness="Never" effect="outline" effect_distance="1,1" justify="center" pivot="topleft"/>
 					</rect>
 
@@ -212,7 +212,7 @@
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsHealth]"/>
 						
-                        <texture name="Icon" depth="7" pos="31,-2" size="58,58" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_health_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+                        <texture name="Icon" depth="7" pos="31,-2" size="58,58" texture="@modfolder(MadWorld_UI)://Textures/ui_game_health_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						<!--
 						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" pos="40,-8" size="44,44" foregroundlayer="true"/>
 						-->
@@ -228,7 +228,7 @@
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsStamina]"/>
 						
-                        <texture name="Icon" depth="7" pos="31,-3" size="54,54" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Stamina_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+                        <texture name="Icon" depth="7" pos="31,-3" size="54,54" texture="@modfolder(MadWorld_UI)://Textures/ui_game_Stamina_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						<!--
 						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" pos="40,-6" size="46,46" foregroundlayer="true"/>
 						-->
@@ -244,7 +244,7 @@
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsFood]"/>
 						
-                        <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Food_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+                        <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@modfolder(MadWorld_UI)://Textures/ui_game_Food_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						<!--
 						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_fork" pos="40,-9" size="42,42" foregroundlayer="true"/>
 						-->
@@ -260,7 +260,7 @@
                         <filledsprite name="background" depth="3" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.3" color="[darkGrey]"/>
                         <filledsprite name="BarContent" depth="5" pos="92,-9" size="120,42" atlas="uiAtlas" type="filled" fill="0" color="[hudElementsWater]"/>
 						
-                        <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/ui_game_Water_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+                        <texture name="Icon" depth="7" pos="35,-7" size="46,46" texture="@modfolder(MadWorld_UI)://Textures/ui_game_Water_Color.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 						<!--
 						<sprite depth="7" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water" pos="40,-9" size="42,42" foregroundlayer="true"/>
 						-->
@@ -281,7 +281,7 @@
             <rect  depth="0" pos="-117,70" size="900,215" backgroundcolor="[black]" controller="ToolbeltWindow" cursor_area="true" visible="{toolbeltvisible}">
 				
 			<rect name="SideInfo" pos="569,-36" pivot="TopLeft">			
-				<texture name="Background_IMG" depth="0" pos="0,50" height="74" width="200" texture="@https://raw.githubusercontent.com/Pro0rbit/MadClownWorld/main/Textures/fade1.png" color="[hudElementsIcon]" foregroundlayer="true"/>
+				<texture name="Background_IMG" depth="0" pos="0,50" height="74" width="200" texture="@modfolder(MadWorld_UI)://Textures/ui_game_Fade1.png" color="[hudElementsIcon]" foregroundlayer="true"/>
 				<rect name="AmmoCount" pos="0,50" controller="HUDStatBar" stat_type="ActiveItem" visible="{statvisible}" >
 						<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon}" size="35,35" pos="5,-5" color="{staticoncolor}" foregroundlayer="true" />
 						<label depth="6" name="TextContent" pos="44,-5" font_size="35" color="[white]" justify="left" text="{statcurrentwithmax}" />
@@ -388,8 +388,7 @@
             <sprite color="[black]" pos="0, -50" height="200" type="sliced" globalopacitymod="0.9" />
         </window>
     </append>
-	
-	<!-- Party -->
+
     <remove xpath="/windows/window[@name='windowGroupBars']"/>
 
 	<append xpath="/windows">
