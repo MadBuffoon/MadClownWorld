@@ -20,7 +20,11 @@
         <style_entry name="hudElementsStamina" value="27,143,247"/>
         <style_entry name="hudElementsFood" value="64,176,63"/>
         <style_entry name="hudElementsWater" value="59,191,254"/>
-        <style_entry name="Black" value="0,0,0"/>
+		
+        <style_entry name="Black" value="0,0,0"/>		
+        <style_entry name="GreyTP" value="64,64,64,180"/>
+
+		
     </append>
 
 

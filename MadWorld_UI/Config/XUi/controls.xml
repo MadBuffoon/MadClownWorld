@@ -48,12 +48,12 @@
 				<filledsprite depth="3" name="BarStaminaModifiedMax" color="110,110,110,255" height="22" width="165" type="filled" fill="{statcurrentwithmax}" />
 				-->
 				
-				<filledsprite depth="5"  name="BarHealth" color="{healthcolor}" width="165" height="22" type="filled" fill="{healthfill}" />
-				<filledsprite depth="5"  pos="0, -22" name="BarStamina" color="0,54,255,255" width="165" height="6" type="filled" fill="{staminafill}" />
+				<filledsprite depth="5"  name="BarHealth" color="[hudElementsHealth]" width="165" height="22" type="filled" fill="{healthfill}" />
+				<filledsprite depth="5"  pos="0, -22" name="BarStamina" color="[hudElementsStamina]" width="165" height="6" type="filled" fill="{staminafill}" />
 				 
 				 
 				<label depth="6" name="TextContent" pos="6, 0"  height="20" width="124" color="[white]" justify="left" pivot="topleft" text="{name}"/> <!--HP:[DECEA3]{healthcurrent}  {level}  -->
-				<label depth="6" name="TextContent" pos="200,0" font_size="20" color="240,240,240,255" pivot="topleft" text="{distance}" height="30" effect="outline"/> <!--{distancecolor}-->
+				<label depth="6" name="TextContent" pos="200,0" font_size="20" color="{distancecolor}" pivot="topleft" text="{distance}" height="30" effect="outline"/> <!--{distancecolor} or "240,240,240,255"-->
 
 				<sprite depth="8" name="icon1" width="16" height="16" pos="140,-2" sprite="{icon1}" visible="{showicon1}" />
 				<sprite depth="8" name="icon2" width="16" height="16" pos="122,-2" sprite="{icon2}" visible="{showicon2}" />
