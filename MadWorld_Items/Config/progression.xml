@@ -5,9 +5,52 @@
 		</effect_group>
 	</append>
 	
+	<set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='CraftingTier']/@operation">base_set</set>
+	
+	
+	<set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='CraftingTier'][@value='1,2,3,4,4']/@value">2,3,4,5,5</set>
+	<set xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@name='CraftingTier'][@value='1,4']/@value">2,5</set>
+	<set xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='CraftingTier'][@value='1,4']/@value">2,5</set>
+	<set xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@name='CraftingTier'][@value='0,5']/@value">2,5</set>
+	
+	
+	
+	<set xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@name='HarvestCount']/@operation">base_add</set>
+	
 	
 <append xpath="/progression/attributes">
-	<attribute name="MadClownWorld"  name_key="MadClownWorldItems" desc_key="MadClownWorldItemsDesc" icon="ui_game_symbol_trophy" min_level="1" max_level="1">
+	<attribute name="MadClownWorld"  name_key="MadClownWorld" desc_key="MadClownWorldItemsDesc" icon="ui_game_symbol_trophy" min_level="1" max_level="1">
 
 						<!-- the following has no effect it's just there as a place holder to avoid errors -->
 	<effect_group>
@@ -36,18 +79,29 @@
 						<!-- end of the place holder -->
 	</attribute>
 </append>	
-		<append xpath="/progression/perks">
 
-			<perk name="Items" parent="MadClownWorld" name_key="Items" desc_key="Unlock EndGame Items" icon="ui_game_symbol_misc_crafting">
+	<append xpath="/progression/skills">
+
+		<skill name="MadAll" parent="MadClownWorld" name_key="[FFFFFF]All attributes" icon="ui_game_symbol_adventure"><effect_group/></skill>
+		<skill name="MadPerception" parent="MadClownWorld" name_key="[00EBFF]Perception" icon="ui_game_symbol_stealth"><effect_group/></skill>
+		<skill name="MadStrength" parent="MadClownWorld" name_key="[F8FD43]Strength" icon="ui_game_symbol_muscle"><effect_group/></skill>
+		<skill name="MadFortitude" parent="MadClownWorld" name_key="[FF0000]Fortitude" icon="ui_game_symbol_add"><effect_group/></skill>
+		<skill name="MadAgilty" parent="MadClownWorld" name_key="[21C700]Agility" icon="ui_game_symbol_agility"><effect_group/></skill>
+		<skill name="MadIntellect" parent="MadClownWorld" name_key="[FF00E7]Intellect" icon="ui_game_symbol_intellect"><effect_group/></skill>
+
+	</append>
+	<append xpath="/progression/perks">
+
+			<perk name="Items" max_level="2" parent="MadAll" name_key="Items" desc_key="Unlock EndGame Items" icon="ui_game_symbol_misc_crafting">
 
 
 				<level_requirements level="1">
-							<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering"    operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
+							<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
 				</level_requirements>
 				<level_requirements level="2">
-							<requirement name="ProgressionLevel" progression_name="perkMiner69r"  operation="GTE" value="5" desc_key="Miner69rLevel05"/>
-							<requirement name="ProgressionLevel" progression_name="perkSalvageOperations"   operation="GTE" value="5" desc_key="reqSalvageOperationsLevel05"/>
-							<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering"    operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
+							<requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="GTE" value="5" desc_key="Miner69rLevel05"/>
+							<requirement name="ProgressionLevel" progression_name="perkSalvageOperations" operation="GTE" value="5" desc_key="reqSalvageOperationsLevel05"/>
+							<requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="GTE" value="5" desc_key="reqAdvancedEngineeringLevel05"/>
 							<requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="GTE" value="5" desc_key="reqGreaseMonkeyLevel05"/>
 				</level_requirements>
 				<effect_group>	
@@ -57,13 +111,23 @@
 					<effect_description level="2" desc_base="SuperNailgun" long_desc_key="SuperNailgunDesc"/>
 				</effect_group>
 			</perk>
-			<perk name="MadDamageMod" parent="MadClownWorld" name_key="Damage Mod" desc_key="Craft modules to install into tools or weapons to increase the block,entity DMG by up to 60% and up to 60% Less Degradation Taken." icon="ui_game_symbol_book">
+			<perk name="MadDamageMod" parent="MadIntellect" name_key="Damage Mod" desc_key="Craft modules to install into tools or weapons to increase the block,entity DMG by up to 60% and up to 60% Less Degradation Taken." icon="ui_game_symbol_book">
 
-				<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="Intellect lvl 2"/></level_requirements>
-				<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="Intellect lvl 4"/></level_requirements>
-				<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="Intellect lvl 6"/></level_requirements>
-				<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="Intellect lvl 8"/></level_requirements>
-				<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="Intellect lvl 10"/></level_requirements>
+				<level_requirements level="1">
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="Intellect lvl 6"/>
+				</level_requirements>
+				<level_requirements level="2">
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="Intellect lvl 7"/>
+				</level_requirements>
+				<level_requirements level="3">
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="Intellect lvl 8"/>
+				</level_requirements>
+				<level_requirements level="4">
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="9" desc_key="Intellect lvl 9"/>
+				</level_requirements>
+				<level_requirements level="5">
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="Intellect lvl 10"/>
+				</level_requirements>
 
 			<effect_group>
 		
@@ -73,14 +137,150 @@
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1"	tags="ModDMG4"/>
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1"	tags="ModDMG5"/>
 			
-				<effect_description level="1" desc_base="Module DMG 20%" long_desc_key="ModDMG1Desc"/>
-				<effect_description level="2" desc_base="Module DMG 30%" long_desc_key="ModDMG2Desc"/>
-				<effect_description level="3" desc_base="Module DMG 40%" long_desc_key="ModDMG3Desc"/>
-				<effect_description level="4" desc_base="Module DMG 50%" long_desc_key="ModDMG4Desc"/>
-				<effect_description level="5" desc_base="Module DMG 60%" long_desc_key="ModDMG5Desc"/>
+				<effect_description level="1" desc_base="Module DMG 6%" long_desc_key="ModDMG1Desc"/>
+				<effect_description level="2" desc_base="Module DMG 12%" long_desc_key="ModDMG2Desc"/>
+				<effect_description level="3" desc_base="Module DMG 18%" long_desc_key="ModDMG3Desc"/>
+				<effect_description level="4" desc_base="Module DMG 24%" long_desc_key="ModDMG4Desc"/>
+				<effect_description level="5" desc_base="Module DMG 30%" long_desc_key="ModDMG5Desc"/>
 
 			</effect_group>
 		
+		</perk>
+		<perk name="perkMoreCrop" max_level="5" parent="MadFortitude" name_key="More Crop Yield" desc_key="perkMoreCropDesc" icon="ui_game_symbol_tree">
+			
+				<level_requirements level="1">
+					<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="Fortitude lvl 10"/>
+					<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3" desc_key="Living Off The Land lvl 3"/>
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="Intellect lvl 6"/>
+				</level_requirements>
+				<level_requirements level="2">
+					<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="Fortitude lvl 10"/>
+					<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3" desc_key="Living Off The Land lvl 5"/>
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="Intellect lvl 7"/>
+				</level_requirements>
+				<level_requirements level="3">
+					<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="Fortitude lvl 10"/>
+					<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3" desc_key="Living Off The Land lvl 3"/>
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="Intellect lvl 8"/>
+				</level_requirements>
+				<level_requirements level="4">
+					<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="Fortitude lvl 10"/>
+					<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3" desc_key="Living Off The Land lvl 3"/>
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="9" desc_key="Intellect lvl 9"/>
+				</level_requirements>
+				<level_requirements level="5">
+					<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="Fortitude lvl 10"/>
+					<requirement name="ProgressionLevel" progression_name="perkLivingOffTheLand" operation="GTE" value="3" desc_key="Living Off The Land lvl 3"/>
+					<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="Intellect lvl 10"/>
+				</level_requirements>
+				
+			<effect_group>
+				<passive_effect name="HarvestCount" operation="base_add" level="1,5" value="1,5" tags="cropHarvest"/>
+
+				<effect_description level="1" desc_key="perkMoreCropRank1Desc" long_desc_key="perkMoreCropRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkMoreCropRank2Desc" long_desc_key="perkMoreCropRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkMoreCropRank3Desc" long_desc_key="perkMoreCropRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkMoreCropRank4Desc" long_desc_key="perkMoreCropRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkMoreCropRank5Desc" long_desc_key="perkMoreCropRank5LongDesc"/>
+			</effect_group>
+		</perk>
+			
+		<perk name="Speedy Harvest" parent="MadPerception" name_key="Speedy Harvest" desc_key="DescSpeedyHarvest" icon="ui_game_symbol_speed">
+
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="2" desc_key="Perception lvl 2"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="Perception lvl 4"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="Perception lvl 6"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="8" desc_key="Perception lvl 8"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="Perception lvl 10"/></level_requirements>
+
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="tool"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3,4,5" value="0.1,0.2,0.3,0.4,0.5"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,2,3,4,5" value="0.1,0.2,0.3,0.4,0.5"/>
+
+				<passive_effect name="StaminaLoss" operation="perc_add" level="1,2,3,4,5" value="-0.05,-0.1,-0.15,-0.2,-0.25"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" level="1,2,3,4,5" value="-0.05,-0.1,-0.15,-0.2,-0.25" tags="secondary"/>
+
+				<effect_description level="1" desc_base="Sloth" long_desc_key="SlothDesc"/>
+				<effect_description level="2" desc_base="Turtle" long_desc_key="TurtleDesc"/>
+				<effect_description level="3" desc_base="Rabbit" long_desc_key="RabbitDesc"/>
+				<effect_description level="4" desc_base="Greyhound" long_desc_key="GreyhoundDesc"/>
+				<effect_description level="5" desc_base="Cheetah" long_desc_key="CheetahDesc"/>
+			</effect_group>
+
+		</perk>
+		
+		<perk name="Run forest run" parent="MadAgilty" name_key="Run Forest run" desc_key="DescRunForestRun" icon="ui_game_symbol_run">
+
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="2" desc_key="Agility lvl 2"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="Agility lvl 4"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="6" desc_key="Agility lvl 6"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="8" desc_key="Agility lvl 8"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="10" desc_key="Agility lvl 10"/></level_requirements>
+
+			<effect_group>
+				<effect_description level="1"  desc_base="Hiker" long_desc_key="HikerDesc"/>
+				<effect_description level="2"  desc_base="Jogger" long_desc_key="JoggerDesc"/>
+				<effect_description level="3"  desc_base="Running Man" long_desc_key="RunningManDesc"/>
+				<effect_description level="4"  desc_base="Marathon Man" long_desc_key="MarathonManDesc"/>
+				<effect_description level="5"  desc_base="Triathlete" long_desc_key="TriathleteDesc"/>
+		
+				<passive_effect name="CrouchSpeed" operation="perc_add" value="0.1,0.3" level="1,5"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.1,0.3" level="1,5"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.1,0.3" level="1,5"/>			
+				<passive_effect name="StaminaLoss" operation="perc_add" value="0.05,0.25" level="1,5"/>
+			
+			</effect_group>
+	
+		</perk>
+		
+		<perk name="CraftingTier" max_level="4" parent="MadIntellect" name_key="Crafting Tier Master" desc_key="DescCraftingTier" icon="ui_game_symbol_misc_crafting">
+
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="Intellect lvl 2"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="Intellect lvl 4"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="Intellect lvl 6"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="Intellect lvl 8"/></level_requirements>
+			<!--<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="Intellect lvl 10"/></level_requirements>-->
+
+			<effect_group>
+				<passive_effect name="CraftingTier" operation="base_set" level="1" value="2" tier="1,6"/>
+				<passive_effect name="CraftingTier" operation="base_set" level="2" value="3" tier="1,6"/>
+				<passive_effect name="CraftingTier" operation="base_set" level="3" value="4" tier="1,6"/>
+				<passive_effect name="CraftingTier" operation="base_set" level="4" value="5" tier="1,6"/>
+				<!--<passive_effect name="CraftingTier" operation="base_add" level="5" value="5" tier="1,6"/>-->
+
+			<effect_description level="1" desc_base="Crafting Tier 2" long_desc_key="You can now craft Tier 2 items. gear and weapons."/>
+				<effect_description level="2" desc_base="Crafting Tier 3" long_desc_key="You can now craft Tier 3 items. gear and weapons."/>
+				<effect_description level="3" desc_base="Crafting Tier 4" long_desc_key="You can now craft Tier 4 items. gear and weapons."/>
+				<effect_description level="4" desc_base="Crafting Tier 5" long_desc_key="You can now craft Tier 5 items. gear and weapons."/>
+				<!--<effect_description level="5" desc_base="Crafting Tier 6" long_desc_key="You can now craft Tier 6 items. gear and weapons."/>-->
+			</effect_group>
+
+		</perk>
+		<perk name="LootBag" max_level="2" parent="MadPerception" name_key="Looter Extraordinary" desc_key="After killing countless of Zombies you have found a way to loot there most prized possessions." icon="ui_game_symbol_lootbag">
+		
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="8" desc_key="Perception lvl 6"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="Perception lvl 10"/></level_requirements>
+			<!--<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="2" desc_key="Perception lvl 2"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="Perception lvl 4"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="Perception lvl 6"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="8" desc_key="Perception lvl 8"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="Perception lvl 10"/></level_requirements>-->
+
+			<effect_group>
+				<passive_effect name="LootDropProb" operation="perc_add" level="1" value="3.5"/>
+				<passive_effect name="LootDropProb" operation="perc_add" level="2" value="7"/>
+				<!--<passive_effect name="LootDropProb" operation="perc_add" level="3" value="10.5"/>
+				<passive_effect name="LootDropProb" operation="perc_add" level="4" value="14"/>
+				<passive_effect name="LootDropProb" operation="perc_add" level="5" value="17.5"/>-->
+
+				<effect_description level="1" desc_base="10% chance" long_desc_key="you now have a 10% change of getting a loot bag."/>
+				<effect_description level="2" desc_base="20% chance" long_desc_key="you now have a 20% change of getting a loot bag."/>
+				<!--<effect_description level="3" desc_base="30% chance" long_desc_key="you now have a 30% change of getting a loot bag."/>
+				<effect_description level="4" desc_base="40% chance" long_desc_key="you now have a 40% change of getting a loot bag."/>
+				<effect_description level="5" desc_base="50% chance" long_desc_key="you now have a 50% change of getting a loot bag."/>-->
+			</effect_group>
+
 		</perk>
 	</append>
 </config>

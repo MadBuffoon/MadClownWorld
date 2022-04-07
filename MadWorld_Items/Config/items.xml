@@ -239,7 +239,7 @@
 			<property name="CrosshairUpAfterShot" value="true"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="ShowQuality" value="true"/>			
-			<property name="UnlockedBy" value="SuperTool"/>
+			<property name="UnlockedBy" value="Items"/>
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Hitmask_override" value="Melee"/>
@@ -707,23 +707,12 @@
 			
 			
 
-<append xpath="/items/item[@name='vehicleMinibikePlaceable']/property[@name='Tags' and @value]/@value">,smallengine,headlight</append>
-
-<append xpath="items/item[@name='vehicleBicyclePlaceable']">
-<property name="Tags" value="noengine,vehicle,bike"/>
-</append> 
-
-<append xpath="items/item[@name='vehicleMotorcyclePlaceable']">
-<property name="Tags" value="vehicleHarry,motorcycleHarry,headlight,vehicle"/>
-</append> 
-
-<append xpath="items/item[@name='vehicle4x4TruckPlaceable']">
-<property name="Tags" value="vehicleHarry,largeengine,headlight,vehicle"/>
-</append> 
-
-<append xpath="items/item[@name='vehicleGyrocopterPlaceable']">
-<property name="Tags" value="noheadlight,smallengine,vehicle,gyroHarry"/>
-</append> 
+<append xpath="/items/item[@name='vehicleBicyclePlaceable']/property[@name='Tags' and @value]/@value">,bike,noengine</append>
+<append xpath="/items/item[@name='vehicleMinibikePlaceable']/property[@name='Tags' and @value]/@value">,Minibike</append>
+<append xpath="/items/item[@name='vehicleMotorcyclePlaceable']/property[@name='Tags' and @value]/@value">,motorcycle</append>
+<append xpath="/items/item[@name='vehicle4x4TruckPlaceable']/property[@name='Tags' and @value]/@value">,4x4</append>
+<append xpath="/items/item[@name='vehicleGyrocopterPlaceable']/property[@name='Tags' and @value]/@value">,gyro</append>
+ 
 
 
 </config>
